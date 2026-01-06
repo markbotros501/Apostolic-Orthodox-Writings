@@ -1,0 +1,54 @@
+:root {
+    /* Colors - Premium/Classic Palette */
+    --color-primary: #2c3e50;
+    /* Deep Blue/Slate */
+    --color-primary-light: #34495e;
+    --color-secondary: #c0392b;
+    /* Deep Red/Burgundy */
+    --color-accent: #d4af37;
+    /* Gold */
+
+    --color-bg: #fdfbf7;
+    /* Warm Off-White/Paper */
+    --color-bg-alt: #f4f1ea;
+    /* Slightly darker paper */
+    --color-text: #333333;
+    /* Dark Gray for text */
+    --color-text-light: #666666;
+    /* Medium Gray */
+    --color-border: #e0e0e0;
+
+    /* Typography */
+    /* Using system fonts for now, but targeting serif for headings to give a "book" feel */
+    --font-serif: 'Merriweather', 'Georgia', serif;
+    --font-sans: 'Inter', 'system-ui', sans-serif;
+
+    --font-size-base: 1rem;
+    --font-size-sm: 0.875rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    --font-size-3xl: 3rem;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+}
+
+/* Dark Mode Support (Class-based only) */
+/* Dark mode variables are now handled in main.css via body.dark-mode override, 
+   or we can move them here under body.dark-mode if we want to keep variables together.
+   For now, removing the media query ensures it doesn't auto-trigger. */

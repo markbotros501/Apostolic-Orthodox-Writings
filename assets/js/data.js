@@ -1,0 +1,83 @@
+// Data Structure for Patristic Library
+const db = {
+    fathers: [
+        {
+            id: "ignatius-antioch",
+            name: "Ignatius of Antioch",
+            dates: "c. 35 – c. 107 AD",
+            bio: "Ignatius of Antioch was an early Christian writer and bishop of Antioch. En route to Rome, where he met his martyrdom, Ignatius wrote a series of letters. This correspondence now forms a central part of the later collection known as the Apostolic Fathers.",
+            works: [
+                {
+                    id: "epistle-to-polycarp",
+                    title: "Epistle to Polycarp",
+                    type: "epistle",
+                    path: "pages/fathers/ignatius/epistle-to-polycarp.html"
+                }
+            ]
+        },
+        {
+            id: "cyril-alexandria",
+            name: "Cyril of Alexandria",
+            dates: "376 - 444 AD",
+            bio: "Patriarch of Alexandria who played a central role in the Council of Ephesus and the defense of the title Theotokos for Mary.",
+            works: [
+                {
+                    id: "on-adoration",
+                    title: "On Adoration in Spirit and Truth",
+                    type: "treatise",
+                    path: "pages/fathers/cyril/works/index.html"
+                }
+            ]
+        },
+        {
+            id: "severus-antioch",
+            name: "Severus of Antioch",
+            dates: "465 - 538 AD",
+            bio: "Patriarch of Antioch and a leading theologian of the Miaphysite church, known for his extensive homilies and letters.",
+            works: [
+                {
+                    id: "critique-tome-julian",
+                    title: "Critique of the Tome of Julian",
+                    type: "treatise",
+                    path: "pages/fathers/severus-antioch/Critique of the Tome of Julian.html"
+                },
+                {
+                    id: "against-propositions-julian",
+                    title: "Against the Propositions of Julian",
+                    type: "treatise",
+                    path: "pages/fathers/severus-antioch/Against the Propositions of Julian.html"
+                },
+                {
+                    id: "cathedral-homilies",
+                    title: "Cathedral Homilies",
+                    type: "homily",
+                    path: "pages/fathers/severus-antioch/Cathedral Homilies/index.html"
+                }
+            ]
+        },
+        {
+            id: "polycarp",
+            name: "Polycarp of Smyrna",
+            dates: "69 – 155 AD",
+            bio: "Polycarp was a 2nd-century Christian bishop of Smyrna. According to the Martyrdom of Polycarp, he died a martyr, bound and burned at the stake, then stabbed when the fire failed to consume his body.",
+            works: []
+        },
+        {
+            id: "justin-martyr",
+            name: "Justin Martyr",
+            dates: "100 – 165 AD",
+            bio: "Justin Martyr was an early Christian apologist and philosopher. Most of his works are lost, but two apologies and a dialogue have survived. He was martyred, alongside some of his students, and is considered a saint by the Roman Catholic Church, the Anglican Communion, the Eastern Orthodox Church, and the Oriental Orthodox Churches.",
+            works: []
+        },
+        {
+            id: "irenaeus",
+            name: "Irenaeus of Lyons",
+            dates: "c. 130 – c. 202 AD",
+            bio: "Irenaeus was a Greek bishop noted for his role in guiding and expanding Christian communities in the southern regions of present-day France and, more widely, for the development of Christian theology by combating heresy and defining orthodoxy.",
+            works: []
+        }
+    ]
+};
+
+// Export for use in other modules (if using modules) or global access
+window.patristicDB = db;

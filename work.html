@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Title - Apostolic Orthodox Writings</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Apostolic Orthodox Writings</a>
+            <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" id="breadcrumb-father">Father</a></li>
+                <li aria-current="page" id="breadcrumb-work">Work</li>
+            </ol>
+        </nav>
+
+        <article class="work-container">
+            <header class="work-header">
+                <h1 id="work-title">Loading...</h1>
+                <p class="work-meta">
+                    <span id="work-author">Author</span> •
+                    <span id="work-date">Date</span>
+                </p>
+            </header>
+
+            <div id="work-content" class="work-content">
+                <!-- Content will be injected here -->
+                <div class="loading-spinner">Loading text...</div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container"></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/work.js"></script>
+</body>
+
+</html>
