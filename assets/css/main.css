@@ -1,11 +1,22 @@
 @import 'reset.css';
 @import 'variables.css';
 
+/* Smooth scrolling for better UX */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
     font-family: var(--font-sans);
     background-color: var(--color-bg);
     color: var(--color-text);
     transition: background-color 0.3s ease, color 0.3s ease;
+    /* Better touch scrolling on mobile */
+    -webkit-overflow-scrolling: touch;
+    /* Prevent text selection on buttons for better mobile UX */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 h1,
@@ -25,11 +36,17 @@ a {
     color: var(--color-secondary);
     text-decoration: none;
     transition: color 0.2s ease;
+    /* Better touch target */
+    touch-action: manipulation;
 }
 
 a:hover {
     color: var(--color-primary);
     text-decoration: underline;
+}
+
+a:active {
+    opacity: 0.8;
 }
 
 .container {
@@ -114,6 +131,9 @@ nav ul {
     flex-direction: column;
     width: 100%;
     cursor: pointer;
+    /* Better touch interaction */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
 }
 
 .card-header {
@@ -128,6 +148,14 @@ nav ul {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
     border-color: var(--color-primary-light);
+}
+
+/* Touch-friendly card interaction on mobile */
+@media (hover: none) and (pointer: coarse) {
+    .card:active {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-md);
+    }
 }
 
 .card h3 {
@@ -159,15 +187,30 @@ nav ul {
     color: white;
     border-radius: var(--radius-sm);
     font-weight: 500;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.1s ease;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
+    border: none;
+    /* Better touch interaction */
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    min-height: 44px; /* Minimum touch target size */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn:hover {
     background-color: var(--color-primary-light);
     text-decoration: none;
     color: white;
+}
+
+.btn:active {
+    transform: scale(0.98);
+    opacity: 0.9;
 }
 
 /* Footer */
@@ -182,10 +225,128 @@ footer .container {
     padding: var(--spacing-md) 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* Responsive Design - Mobile First Approach */
+
+/* Base styles are mobile-first, so these are the default */
+
+/* Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
     header .container {
-        justify-content: space-between;
+        padding: var(--spacing-xs) var(--spacing-sm);
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: var(--font-size-base);
+        line-height: 1.2;
+        word-break: break-word;
+    }
+
+    #theme-toggle {
+        font-size: 1.1rem;
+        min-width: 2rem;
+        min-height: 2rem;
+        padding: var(--spacing-xs);
+    }
+
+    .card {
+        padding: var(--spacing-md);
+    }
+
+    .card h3 {
+        font-size: var(--font-size-lg);
+    }
+
+    .card .dates {
+        font-size: var(--font-size-xs);
+        margin-left: var(--spacing-sm);
+    }
+
+    .author-profile {
+        padding: var(--spacing-md);
+    }
+
+    .author-header h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    .author-dates {
+        font-size: var(--font-size-base);
+    }
+
+    .author-bio {
+        font-size: var(--font-size-base);
+        line-height: 1.6;
+    }
+
+    .work-container {
+        padding: var(--spacing-md);
+        max-width: 100%;
+    }
+
+    .work-header h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    .work-content {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        padding: var(--spacing-sm) !important;
+    }
+
+    .work-content h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    .work-content h2 {
+        font-size: var(--font-size-lg);
+    }
+
+    .work-content h3 {
+        font-size: var(--font-size-base);
+    }
+
+    .breadcrumbs {
+        font-size: var(--font-size-xs);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .breadcrumbs ol {
+        flex-wrap: wrap;
+    }
+
+    .work-link {
+        padding: var(--spacing-sm) var(--spacing-md);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .work-title {
+        font-size: var(--font-size-base);
+    }
+
+    .btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: var(--font-size-sm);
+        min-height: 44px; /* Touch-friendly size */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Mobile (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    header .container {
         padding: var(--spacing-sm) var(--spacing-md);
     }
 
@@ -193,8 +354,123 @@ footer .container {
         font-size: var(--font-size-lg);
     }
 
+    .card {
+        padding: var(--spacing-lg);
+    }
+
+    .author-profile {
+        padding: var(--spacing-lg);
+    }
+
+    .work-container {
+        padding: var(--spacing-lg);
+    }
+
+    .work-content {
+        font-size: 1rem;
+        padding: var(--spacing-md) !important;
+    }
+
+    .work-link {
+        padding: var(--spacing-md);
+    }
+
+    .btn {
+        min-height: 44px; /* Touch-friendly size */
+    }
+}
+
+/* Tablet (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+        padding: 0 var(--spacing-lg);
+    }
+
+    .card {
+        padding: var(--spacing-lg);
+    }
+
+    .work-container {
+        padding: var(--spacing-xl);
+    }
+
+    .work-content {
+        font-size: 1.05rem;
+    }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .work-content {
+        font-size: 1.1rem;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+/* General Mobile Improvements (all mobile sizes) */
+@media (max-width: 768px) {
+    header .container {
+        justify-content: space-between;
+    }
+
     .fathers-grid {
-        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    .card .dates {
+        margin-left: 0;
+        margin-top: var(--spacing-xs);
+    }
+
+    .author-works h2 {
+        font-size: var(--font-size-xl);
+    }
+
+    .work-header {
+        text-align: left;
+        padding-bottom: var(--spacing-sm);
+    }
+
+    .work-meta {
+        font-size: var(--font-size-sm);
+    }
+
+    /* Improve touch targets */
+    a, button {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    /* Better spacing for lists */
+    .works-list li {
+        margin-bottom: var(--spacing-md);
+    }
+
+    /* Ensure images are responsive */
+    .work-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Responsive tables if any */
+    .work-content table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 }
 /* Author Profile */
@@ -259,6 +535,9 @@ footer .container {
   text-decoration: none;
   color: var(--color-text);
   transition: all 0.2s ease;
+  /* Better touch interaction */
+  touch-action: manipulation;
+  min-height: 44px; /* Minimum touch target */
 }
 
 .work-link:hover {
@@ -267,6 +546,11 @@ footer .container {
   transform: translateX(4px);
   text-decoration: none;
   box-shadow: var(--shadow-sm);
+}
+
+.work-link:active {
+  transform: translateX(2px);
+  opacity: 0.9;
 }
 
 .work-title {
@@ -443,6 +727,11 @@ body {
   min-width: 2.5rem;
   min-height: 2.5rem;
   border-radius: var(--radius-sm);
+  /* Better touch interaction */
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 #theme-toggle:hover {
@@ -452,6 +741,7 @@ body {
 
 #theme-toggle:active {
   transform: scale(0.95);
+  opacity: 1;
 }
 
 /* Dark Mode Overrides */
@@ -539,11 +829,82 @@ body.dark-mode .work-content .source-note {
   color: #a0a0a0 !important;
 }
 
-/* Responsive theme toggle */
+/* Additional Mobile Optimizations */
+
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Improve text readability on mobile */
 @media (max-width: 768px) {
-  #theme-toggle {
-    font-size: 1.25rem;
-    min-width: 2rem;
-    min-height: 2rem;
-  }
+    body {
+        -webkit-text-size-adjust: 100%;
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+
+    /* Better line spacing for readability */
+    p {
+        line-height: 1.7;
+    }
+
+    /* Improve heading spacing */
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.3;
+        word-wrap: break-word;
+    }
+}
+
+/* Improve work content readability on all devices */
+.work-content {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+/* Better spacing for paragraphs in work content */
+.work-content p {
+    margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .work-content p {
+        margin-bottom: var(--spacing-sm);
+    }
+}
+
+/* Responsive images and media */
+.work-content img,
+.work-content video,
+.work-content iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: var(--spacing-md) auto;
+}
+
+@media (max-width: 768px) {
+    .work-content img,
+    .work-content video,
+    .work-content iframe {
+        margin: var(--spacing-sm) auto;
+    }
+}
+
+/* Better code blocks if any */
+.work-content pre,
+.work-content code {
+    overflow-x: auto;
+    word-wrap: normal;
+    white-space: pre;
+}
+
+@media (max-width: 768px) {
+    .work-content pre {
+        font-size: 0.875rem;
+        padding: var(--spacing-sm);
+    }
 }
