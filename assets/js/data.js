@@ -25,7 +25,7 @@ const db = {
                     id: "on-adoration",
                     title: "On Adoration in Spirit and Truth",
                     type: "treatise",
-                    path: "pages/fathers/cyril/works/index.html"
+                    path: "pages/fathers/cyril-alexandria/works/index.html"
                 }
             ]
         },
