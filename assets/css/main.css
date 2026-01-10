@@ -469,6 +469,17 @@ footer .container {
         white-space: nowrap;
     }
 
+    /* Format chapter list links to match work titles on mobile */
+    .chapter-list a,
+    .work-index .chapter-list a,
+    .work-content .chapter-list a,
+    #work-content .chapter-list a {
+        font-size: var(--font-size-sm);
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+    }
+
     .btn {
         padding: var(--spacing-sm) var(--spacing-md);
         font-size: var(--font-size-sm);
@@ -568,6 +579,18 @@ footer .container {
     }
 
     .work-title {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+
+    /* Format chapter list links to match work titles on mobile */
+    .chapter-list a,
+    .work-index .chapter-list a,
+    .work-content .chapter-list a,
+    #work-content .chapter-list a {
         display: block;
         white-space: nowrap;
         overflow: hidden;
@@ -849,6 +872,17 @@ footer .container {
     }
 
     .work-title {
+        font-size: var(--font-size-sm);
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    /* Format chapter list links to match work titles on mobile */
+    .chapter-list a,
+    .work-index .chapter-list a,
+    .work-content .chapter-list a,
+    #work-content .chapter-list a {
         font-size: var(--font-size-sm);
         display: block;
         width: 100%;
@@ -1236,6 +1270,36 @@ body {
   display: none;
 }
 
+/* Format chapter list links to match work titles */
+.chapter-list a,
+.work-index .chapter-list a,
+.work-content .chapter-list a,
+#work-content .chapter-list a {
+  font-weight: 400;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  transition: color 0.2s ease;
+}
+
+.chapter-list a:hover,
+.work-index .chapter-list a:hover,
+.work-content .chapter-list a:hover,
+#work-content .chapter-list a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.chapter-list a:active,
+.work-index .chapter-list a:active,
+.work-content .chapter-list a:active,
+#work-content .chapter-list a:active {
+  opacity: 0.8;
+}
+
 .loading-spinner {
   text-align: center;
   color: var(--color-text-light);
@@ -1327,6 +1391,20 @@ body.dark-mode .work-link:hover {
 
 body.dark-mode .work-title {
   color: var(--color-secondary);
+}
+
+body.dark-mode .chapter-list a,
+body.dark-mode .work-index .chapter-list a,
+body.dark-mode .work-content .chapter-list a,
+body.dark-mode #work-content .chapter-list a {
+  color: var(--color-secondary);
+}
+
+body.dark-mode .chapter-list a:hover,
+body.dark-mode .work-index .chapter-list a:hover,
+body.dark-mode .work-content .chapter-list a:hover,
+body.dark-mode #work-content .chapter-list a:hover {
+  color: var(--color-primary);
 }
 
 body.dark-mode .works-list li::marker {
