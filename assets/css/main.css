@@ -429,16 +429,16 @@ footer .container {
     .work-title {
         font-size: var(--font-size-sm);
         display: inline-block;
-        width: calc(100% - 1em);
+        width: calc(100% - 0.5em);
         vertical-align: top;
         white-space: nowrap;
     }
 
     .works-list li {
         margin-left: 0;
-        list-style: none;
+        list-style: none !important;
         position: relative;
-        padding-left: 1em;
+        padding-left: 0.5em;
         width: 100%;
     }
 
@@ -448,6 +448,10 @@ footer .container {
         position: absolute;
         left: 0;
         top: 0;
+    }
+
+    .works-list li::marker {
+        display: none !important;
     }
 
     .btn {
@@ -784,11 +788,11 @@ footer .container {
 
     .works-list li {
         margin-bottom: var(--spacing-sm);
-        list-style: none;
+        list-style: none !important;
         margin-left: 0;
         text-align: left;
         position: relative;
-        padding-left: 1em;
+        padding-left: 0.5em;
         width: 100%;
     }
 
@@ -801,7 +805,7 @@ footer .container {
     }
 
     .works-list li::marker {
-        display: none;
+        display: none !important;
     }
 
     .work-link {
@@ -812,7 +816,7 @@ footer .container {
     .work-title {
         font-size: var(--font-size-sm);
         display: inline-block;
-        width: calc(100% - 1em);
+        width: calc(100% - 0.5em);
         vertical-align: top;
         white-space: nowrap;
     }
@@ -882,7 +886,7 @@ footer .container {
 
 .works-list li {
   margin-bottom: var(--spacing-sm);
-  list-style: disc;
+  list-style: none;
   list-style-position: outside;
   padding-left: 0;
   margin-left: 1.5em;
