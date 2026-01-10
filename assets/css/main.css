@@ -101,7 +101,7 @@ footer .coptic-banner {
 
 .logo {
     font-family: var(--font-serif);
-    font-size: var(--font-size-xl);
+    font-size: 2.25rem;
     font-weight: bold;
     color: var(--color-primary);
     text-decoration: none;
@@ -259,7 +259,7 @@ footer .container {
     }
 
     .logo {
-        font-size: var(--font-size-base);
+        font-size: 1.5rem;
         line-height: 1.2;
         word-break: break-word;
     }
@@ -434,7 +434,7 @@ footer .container {
     }
 
     .logo {
-        font-size: var(--font-size-lg);
+        font-size: 1.875rem;
     }
 
     .card {
