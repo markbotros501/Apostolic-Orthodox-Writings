@@ -238,7 +238,12 @@ footer .container {
 
     /* Add padding to main container on index/author pages */
     main.container {
-        padding: 0 var(--spacing-md) !important;
+        padding: 0 var(--spacing-sm) !important;
+    }
+    
+    /* Further reduce padding for author pages to move works list left */
+    main.container:has(.author-profile) {
+        padding: 0 var(--spacing-xs) !important;
     }
 
     /* Remove padding from main container on work pages for full-width text */
@@ -317,6 +322,16 @@ footer .container {
     .author-bio {
         font-size: var(--font-size-base);
         line-height: 1.6;
+    }
+    
+    /* Move works list further to the left */
+    .author-profile .works-list {
+        margin-left: calc(-1 * var(--spacing-sm));
+        width: calc(100% + 2 * var(--spacing-sm));
+    }
+    
+    .author-profile .works-list li {
+        padding-left: var(--spacing-sm);
     }
 
     .work-container {
@@ -503,7 +518,17 @@ footer .container {
     }
 
     .author-profile {
-        padding: 0 var(--spacing-lg) var(--spacing-sm);
+        padding: 0 var(--spacing-md) var(--spacing-sm);
+    }
+    
+    /* Move works list further to the left */
+    .author-profile .works-list {
+        margin-left: calc(-1 * var(--spacing-md));
+        width: calc(100% + 2 * var(--spacing-md));
+    }
+    
+    .author-profile .works-list li {
+        padding-left: var(--spacing-md);
     }
 
     .work-container {
@@ -785,6 +810,16 @@ footer .container {
         max-width: 100%;
         padding: 0;
     }
+    
+    /* Move works list further to the left on mobile */
+    .author-profile .works-list {
+        margin-left: calc(-1 * var(--spacing-sm));
+        width: calc(100% + 2 * var(--spacing-sm));
+    }
+    
+    .author-profile .works-list li {
+        padding-left: var(--spacing-sm);
+    }
 
     .works-list li {
         margin-bottom: var(--spacing-sm);
@@ -794,6 +829,10 @@ footer .container {
         position: relative;
         padding-left: 0;
         width: 100%;
+    }
+    
+    .author-profile .works-list li {
+        padding-left: var(--spacing-sm);
     }
 
     .works-list li::before {
