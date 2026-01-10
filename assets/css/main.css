@@ -298,33 +298,15 @@ footer .container {
     }
 
     .author-profile {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm) var(--spacing-md);
     }
 
     .author-header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: var(--spacing-xs);
-        flex-wrap: nowrap;
-        overflow: hidden;
-    }
-
-    .author-header h1 {
-        font-size: var(--font-size-base);
-        margin-bottom: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        flex: 1 1 auto;
-        min-width: 0;
+        display: none;
     }
 
     .author-dates {
-        font-size: 0.75rem;
-        white-space: nowrap;
-        flex-shrink: 0;
-        margin: 0;
+        display: none;
     }
 
     .author-bio {
@@ -475,7 +457,7 @@ footer .container {
     }
 
     .author-profile {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-sm) var(--spacing-lg);
     }
 
     .work-container {
@@ -636,31 +618,37 @@ footer .container {
     .author-header {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
         gap: var(--spacing-xs);
         flex-wrap: nowrap;
-        overflow: hidden;
     }
 
     .author-header h1 {
         font-size: var(--font-size-lg);
         margin-bottom: 0;
-        overflow: hidden;
-        text-overflow: ellipsis;
         white-space: nowrap;
-        flex: 1 1 auto;
-        min-width: 0;
+        overflow: visible;
+        flex: 1 1 0;
+        min-width: fit-content;
     }
 
     .author-dates {
         font-size: 0.8125rem;
         white-space: nowrap;
-        flex-shrink: 0;
         margin: 0;
+        flex-shrink: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+    }
+
+    .author-works {
+        margin-top: 0;
     }
 
     .author-works h2 {
         font-size: var(--font-size-xl);
+        margin-top: 0;
     }
 
     .work-header {
@@ -718,31 +706,17 @@ footer .container {
   background-color: white;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: var(--spacing-xl);
+  padding: var(--spacing-md) var(--spacing-xl);
+  padding-top: var(--spacing-sm);
   box-shadow: var(--shadow-sm);
 }
 
 .author-header {
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
-  overflow: hidden;
-}
-
-.author-header h1 {
-  margin-bottom: var(--spacing-xs);
-  font-size: var(--font-size-3xl);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  word-break: keep-all;
+  display: none;
 }
 
 .author-dates {
-  color: var(--color-text-light);
-  font-style: italic;
-  font-size: var(--font-size-lg);
+  display: none;
 }
 
 .author-bio {
@@ -753,8 +727,13 @@ footer .container {
 }
 
 /* Works List */
+.author-works {
+  margin-top: 0;
+}
+
 .author-works h2 {
   font-size: var(--font-size-2xl);
+  margin-top: 0;
   margin-bottom: var(--spacing-md);
   border-bottom: 2px solid var(--color-primary);
   display: inline-block;
