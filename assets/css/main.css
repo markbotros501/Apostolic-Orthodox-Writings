@@ -362,6 +362,17 @@ footer .container {
         font-size: var(--font-size-base);
     }
 
+    /* Ensure work index title stays on one line on small mobile */
+    .work-index h2,
+    .work-content .work-index h2,
+    #work-content .work-index h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: var(--font-size-lg);
+        max-width: 100%;
+    }
+
     .breadcrumbs {
         font-size: 0.7rem;
         margin-bottom: 0;
@@ -666,6 +677,17 @@ footer .container {
 
     .author-works {
         margin-top: 0;
+    }
+
+    /* Ensure work index title stays on one line on mobile */
+    .work-index h2,
+    .work-content .work-index h2,
+    #work-content .work-index h2 {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: var(--font-size-lg);
+        max-width: 100%;
     }
 
     .author-works {
@@ -1070,9 +1092,7 @@ body {
   font-weight: 700;
   margin-top: 0;
   margin-bottom: var(--spacing-md);
-  border-bottom: 2px solid var(--color-primary);
-  display: inline-block;
-  padding-bottom: var(--spacing-xs);
+  display: block;
   text-align: center;
 }
 
