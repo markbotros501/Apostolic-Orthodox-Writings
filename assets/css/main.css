@@ -726,11 +726,17 @@ footer .container {
   border-bottom: 1px solid var(--color-border);
   padding-bottom: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
+  overflow: hidden;
 }
 
 .author-header h1 {
   margin-bottom: var(--spacing-xs);
   font-size: var(--font-size-3xl);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  word-break: keep-all;
 }
 
 .author-dates {
