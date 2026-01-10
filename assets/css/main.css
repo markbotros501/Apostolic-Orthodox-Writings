@@ -1061,6 +1061,15 @@ body {
   color: var(--color-primary);
 }
 
+/* Center the title in work index pages */
+.work-index h2,
+.work-content .work-index h2,
+#work-content .work-index h2 {
+  text-align: center !important;
+  margin-top: 0;
+  margin-bottom: var(--spacing-lg);
+}
+
 .loading-spinner {
   text-align: center;
   color: var(--color-text-light);

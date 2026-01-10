@@ -114,6 +114,12 @@ document.addEventListener('DOMContentLoaded', () => {
             h1Elements.forEach(h1 => {
                 h1.style.textAlign = 'center';
             });
+            
+            // Force center alignment on h2 titles in work-index sections
+            const indexH2Elements = document.querySelectorAll('#work-content .work-index h2, .work-content .work-index h2');
+            indexH2Elements.forEach(h2 => {
+                h2.style.textAlign = 'center';
+            });
         })
         .catch(error => {
             console.error('Error loading work:', error);
@@ -166,6 +172,12 @@ window.loadWorkPart = function (path) {
             const h1Elements = document.querySelectorAll('#work-content h1, .work-content h1');
             h1Elements.forEach(h1 => {
                 h1.style.textAlign = 'center';
+            });
+            
+            // Force center alignment on h2 titles in work-index sections
+            const indexH2Elements = document.querySelectorAll('#work-content .work-index h2, .work-content .work-index h2');
+            indexH2Elements.forEach(h2 => {
+                h2.style.textAlign = 'center';
             });
 
             // Scroll to top
