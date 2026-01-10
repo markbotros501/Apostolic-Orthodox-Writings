@@ -274,7 +274,7 @@ footer .container {
     }
 
     .card {
-        padding: var(--spacing-md);
+        padding: var(--spacing-sm) var(--spacing-md);
     }
 
     .card-header {
@@ -467,7 +467,7 @@ footer .container {
     }
 
     .card {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-sm) var(--spacing-md);
     }
 
     .author-profile {
@@ -597,7 +597,7 @@ footer .container {
     }
 
     .fathers-grid {
-        gap: var(--spacing-md);
+        gap: var(--spacing-sm);
     }
 
     .card-header {
