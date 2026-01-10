@@ -362,15 +362,14 @@ footer .container {
         font-size: var(--font-size-base);
     }
 
-    /* Ensure work index title stays on one line on small mobile */
+    /* Make work index title fully readable on small mobile */
     .work-index h2,
     .work-content .work-index h2,
     #work-content .work-index h2 {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         font-size: var(--font-size-lg);
-        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
 
     .breadcrumbs {
@@ -679,15 +678,14 @@ footer .container {
         margin-top: 0;
     }
 
-    /* Ensure work index title stays on one line on mobile */
+    /* Make work index title fully readable on mobile */
     .work-index h2,
     .work-content .work-index h2,
     #work-content .work-index h2 {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
         font-size: var(--font-size-lg);
-        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
     }
 
     .author-works {
