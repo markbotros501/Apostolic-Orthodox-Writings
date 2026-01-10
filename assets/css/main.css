@@ -427,19 +427,19 @@ footer .container {
     }
 
     .work-title {
-        font-size: var(--font-size-base);
-        display: block;
+        font-size: var(--font-size-sm);
+        display: inline-block;
+        width: calc(100% - 1em);
+        vertical-align: top;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 100%;
     }
 
     .works-list li {
-        margin-left: 0.5em;
+        margin-left: 0;
         list-style: none;
         position: relative;
         padding-left: 1em;
+        width: 100%;
     }
 
     .works-list li::before {
@@ -447,6 +447,7 @@ footer .container {
         color: var(--color-secondary);
         position: absolute;
         left: 0;
+        top: 0;
     }
 
     .btn {
@@ -784,10 +785,11 @@ footer .container {
     .works-list li {
         margin-bottom: var(--spacing-sm);
         list-style: none;
-        margin-left: 0.5em;
+        margin-left: 0;
         text-align: left;
         position: relative;
         padding-left: 1em;
+        width: 100%;
     }
 
     .works-list li::before {
@@ -795,6 +797,7 @@ footer .container {
         color: var(--color-secondary);
         position: absolute;
         left: 0;
+        top: 0;
     }
 
     .works-list li::marker {
@@ -807,11 +810,11 @@ footer .container {
     }
 
     .work-title {
-        display: block;
+        font-size: var(--font-size-sm);
+        display: inline-block;
+        width: calc(100% - 1em);
+        vertical-align: top;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 100%;
     }
 
     /* Ensure images are responsive */
