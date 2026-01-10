@@ -395,7 +395,7 @@ footer .container {
     }
 
     .breadcrumbs ol {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         overflow: hidden;
         align-items: baseline;
     }
@@ -674,7 +674,7 @@ footer .container {
     }
     
     .breadcrumbs ol {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         overflow: hidden;
         align-items: baseline;
     }
@@ -1023,9 +1023,10 @@ body:has(.work-container) .breadcrumbs {
   list-style: none;
   padding: 0;
   align-items: baseline;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow: hidden;
   width: 100%;
+  gap: var(--spacing-xs);
 }
 
 .breadcrumbs li {
@@ -1107,54 +1108,77 @@ body:has(.work-container) .breadcrumbs {
   margin-top: 0;
 }
 
-/* Back to Index button styling - smaller across all platforms */
-.btn-back-to-index {
-  padding: var(--spacing-xs) var(--spacing-sm) !important;
-  font-size: var(--font-size-sm) !important;
-  min-height: auto !important;
-  margin-bottom: var(--spacing-sm) !important;
-  line-height: 1.2;
+/* Back to Index button styling in breadcrumb - smaller across all platforms */
+.breadcrumb-back-button {
+  display: inline-flex;
+  align-items: baseline;
+  flex-shrink: 0;
 }
 
-/* Desktop: Position back button on same line as title */
-@media (min-width: 769px) {
-  /* Container for button and h1 on same line */
-  .title-with-back-button {
-    display: flex;
-    align-items: center;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-md);
-    width: 100%;
-  }
+.breadcrumb-back-button::before {
+  content: "/";
+  margin: 0 var(--spacing-sm);
+  color: var(--color-text-light);
+  line-height: 1.5;
+  vertical-align: baseline;
+}
 
-  .title-with-back-button .btn-back-to-index {
-    margin-bottom: 0 !important;
-    flex-shrink: 0;
-  }
+.breadcrumb-back-button .btn-back-to-index {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  min-height: auto;
+  line-height: 1.2;
+  background-color: transparent;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
 
-  .title-with-back-button h1 {
-    display: inline-block !important;
-    margin: 0 !important;
-    text-align: left !important;
-    flex-grow: 1;
+.breadcrumb-back-button .btn-back-to-index:hover {
+  background-color: var(--color-secondary);
+  color: white;
+  text-decoration: none;
+}
+
+.breadcrumb-back-button .btn-back-to-index:active {
+  opacity: 0.8;
+}
+
+/* Mobile: Allow breadcrumb to wrap if no space */
+@media (max-width: 768px) {
+  .breadcrumbs ol {
+    flex-wrap: wrap;
   }
   
-  /* Fallback: If no wrapper, try to position button and h1 inline */
-  .work-content > .btn-back-to-index:first-child,
-  #work-content > .btn-back-to-index:first-child {
-    display: inline-block !important;
-    margin-bottom: 0 !important;
-    margin-right: var(--spacing-md) !important;
-    vertical-align: middle;
+  .breadcrumb-back-button {
+    width: 100%;
+    margin-top: var(--spacing-xs);
   }
+  
+  .breadcrumb-back-button::before {
+    display: none;
+  }
+  
+  .breadcrumb-back-button .btn-back-to-index {
+    width: 100%;
+    text-align: center;
+  }
+}
 
-  .work-content > .btn-back-to-index:first-child + h1,
-  #work-content > .btn-back-to-index:first-child + h1 {
-    display: inline-block !important;
-    margin: 0 !important;
-    vertical-align: middle;
-    text-align: left !important;
-  }
+/* Dark mode styling for back button in breadcrumb */
+body.dark-mode .breadcrumb-back-button .btn-back-to-index {
+  background-color: transparent;
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+body.dark-mode .breadcrumb-back-button .btn-back-to-index:hover {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
 }
 
 .work-content h1,
