@@ -1107,6 +1107,56 @@ body:has(.work-container) .breadcrumbs {
   margin-top: 0;
 }
 
+/* Back to Index button styling - smaller across all platforms */
+.btn-back-to-index {
+  padding: var(--spacing-xs) var(--spacing-sm) !important;
+  font-size: var(--font-size-sm) !important;
+  min-height: auto !important;
+  margin-bottom: var(--spacing-sm) !important;
+  line-height: 1.2;
+}
+
+/* Desktop: Position back button on same line as title */
+@media (min-width: 769px) {
+  /* Container for button and h1 on same line */
+  .title-with-back-button {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    width: 100%;
+  }
+
+  .title-with-back-button .btn-back-to-index {
+    margin-bottom: 0 !important;
+    flex-shrink: 0;
+  }
+
+  .title-with-back-button h1 {
+    display: inline-block !important;
+    margin: 0 !important;
+    text-align: left !important;
+    flex-grow: 1;
+  }
+  
+  /* Fallback: If no wrapper, try to position button and h1 inline */
+  .work-content > .btn-back-to-index:first-child,
+  #work-content > .btn-back-to-index:first-child {
+    display: inline-block !important;
+    margin-bottom: 0 !important;
+    margin-right: var(--spacing-md) !important;
+    vertical-align: middle;
+  }
+
+  .work-content > .btn-back-to-index:first-child + h1,
+  #work-content > .btn-back-to-index:first-child + h1 {
+    display: inline-block !important;
+    margin: 0 !important;
+    vertical-align: middle;
+    text-align: left !important;
+  }
+}
+
 .work-content h1,
 #work-content h1 {
   font-family: var(--font-serif) !important;

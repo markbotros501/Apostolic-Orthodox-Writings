@@ -165,13 +165,44 @@ window.loadWorkPart = function (path) {
             }
 
             // Preserve original format by including styles and body content with back button
-            const backButton = `<button onclick="location.reload()" class="btn" style="margin-bottom: 1rem;">← Back to Index</button>`;
+            const backButton = `<button onclick="location.reload()" class="btn btn-back-to-index">← Back to Index</button>`;
             document.getElementById('work-content').innerHTML = stylesHTML + backButton + bodyContent;
 
-            // Force center alignment on h1 titles after content loads
+            // On desktop, wrap button and first h1 in a container for proper alignment
+            if (window.innerWidth >= 769) {
+                const workContent = document.getElementById('work-content');
+                const button = workContent.querySelector('.btn-back-to-index');
+                
+                if (button) {
+                    // Find the first h1 (might be directly after button or in a wrapper)
+                    let firstH1 = button.nextElementSibling;
+                    
+                    // If next sibling is body/div, look inside it for h1
+                    if (firstH1 && (firstH1.tagName === 'BODY' || firstH1.tagName === 'DIV')) {
+                        firstH1 = firstH1.querySelector('h1:first-of-type');
+                    } else if (firstH1 && firstH1.tagName !== 'H1') {
+                        // Not h1, find first h1 in work content
+                        firstH1 = workContent.querySelector('h1:first-of-type');
+                    }
+                    
+                    if (firstH1 && firstH1.tagName === 'H1') {
+                        // Create wrapper and move both elements
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'title-with-back-button';
+                        workContent.insertBefore(wrapper, button);
+                        wrapper.appendChild(button);
+                        firstH1.parentNode.removeChild(firstH1);
+                        wrapper.appendChild(firstH1);
+                    }
+                }
+            }
+
+            // Force center alignment on h1 titles after content loads (but not first one on desktop if it has a button)
             const h1Elements = document.querySelectorAll('#work-content h1, .work-content h1');
             h1Elements.forEach(h1 => {
-                h1.style.textAlign = 'center';
+                if (window.innerWidth < 769 || !h1.closest('.title-with-back-button')) {
+                    h1.style.textAlign = 'center';
+                }
             });
             
             // Force center alignment on h2 titles in work-index sections
