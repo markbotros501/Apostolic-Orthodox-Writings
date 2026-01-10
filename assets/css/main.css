@@ -66,7 +66,7 @@ header {
     background-color: var(--color-bg-alt);
     border-bottom: 1px solid var(--color-border);
     padding: 0;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
 }
 
 header .container {
@@ -250,6 +250,11 @@ footer .container {
     body:has(.work-container) header {
         margin-bottom: var(--spacing-sm);
     }
+    
+    /* Reduce header margin on author pages for better spacing */
+    body:has(.author-profile) header {
+        margin-bottom: var(--spacing-xs);
+    }
 
     header .container {
         padding: var(--spacing-xs) var(--spacing-sm);
@@ -298,7 +303,7 @@ footer .container {
     }
 
     .author-profile {
-        padding: var(--spacing-sm) var(--spacing-md);
+        padding: var(--spacing-xs) var(--spacing-md) var(--spacing-sm);
     }
 
     .author-header {
@@ -443,6 +448,11 @@ footer .container {
     body:has(.work-container) header {
         margin-bottom: var(--spacing-md);
     }
+    
+    /* Reduce header margin on author pages for better spacing */
+    body:has(.author-profile) header {
+        margin-bottom: var(--spacing-sm);
+    }
 
     header .container {
         padding: var(--spacing-sm) var(--spacing-md);
@@ -457,7 +467,7 @@ footer .container {
     }
 
     .author-profile {
-        padding: var(--spacing-sm) var(--spacing-lg);
+        padding: var(--spacing-xs) var(--spacing-lg) var(--spacing-sm);
     }
 
     .work-container {
@@ -533,6 +543,11 @@ footer .container {
     /* Reduce header margin on work pages for better spacing */
     body:has(.work-container) header {
         margin-bottom: var(--spacing-md);
+    }
+    
+    /* Reduce header margin on author pages for better spacing */
+    body:has(.author-profile) header {
+        margin-bottom: var(--spacing-sm);
     }
     
     header .container {
@@ -706,8 +721,7 @@ footer .container {
   background-color: white;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: var(--spacing-md) var(--spacing-xl);
-  padding-top: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-xl) var(--spacing-md);
   box-shadow: var(--shadow-sm);
 }
 
@@ -803,7 +817,7 @@ footer .container {
 
 /* Breadcrumbs */
 .breadcrumbs {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
   font-size: 0.75rem;
   line-height: 1.5;
   overflow: hidden;
