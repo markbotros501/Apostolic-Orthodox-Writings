@@ -344,17 +344,40 @@ footer .container {
     }
 
     .breadcrumbs {
-        font-size: var(--font-size-xs);
+        font-size: 0.7rem;
         margin-bottom: var(--spacing-xs);
         padding: 0 var(--spacing-sm);
     }
 
     .breadcrumbs ol {
         flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    
+    .breadcrumbs li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+        flex: 0 1 auto;
+    }
+    
+    .breadcrumbs li:last-child {
+        flex: 1 1 auto;
     }
     
     .breadcrumbs li + li::before {
-        margin: 0 var(--spacing-xs);
+        margin: 0 0.25rem;
+        flex-shrink: 0;
+        white-space: pre;
+    }
+    
+    .breadcrumbs a,
+    .breadcrumbs li[aria-current="page"] {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .work-link {
@@ -495,12 +518,39 @@ footer .container {
         position: relative;
     }
     
+    .breadcrumbs {
+        font-size: 0.75rem;
+    }
+    
     .breadcrumbs ol {
         flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    
+    .breadcrumbs li {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+        flex: 0 1 auto;
+    }
+    
+    .breadcrumbs li:last-child {
+        flex: 1 1 auto;
     }
     
     .breadcrumbs li + li::before {
-        margin: 0 var(--spacing-xs);
+        margin: 0 0.25rem;
+        flex-shrink: 0;
+        white-space: pre;
+    }
+    
+    .breadcrumbs a,
+    .breadcrumbs li[aria-current="page"] {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .fathers-grid {
