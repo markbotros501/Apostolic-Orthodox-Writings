@@ -71,9 +71,10 @@ header {
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: var(--spacing-md) 0;
+    position: relative;
 }
 
 /* Coptic Cross Banner */
@@ -247,7 +248,9 @@ footer .container {
 
     header .container {
         padding: var(--spacing-xs) var(--spacing-sm);
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        justify-content: center;
+        position: relative;
     }
 
     .logo {
@@ -261,6 +264,8 @@ footer .container {
         min-width: 2rem;
         min-height: 2rem;
         padding: var(--spacing-xs);
+        position: absolute;
+        right: var(--spacing-sm);
     }
 
     .card {
@@ -467,7 +472,8 @@ footer .container {
 /* General Mobile Improvements (all mobile sizes) */
 @media (max-width: 768px) {
     header .container {
-        justify-content: space-between;
+        justify-content: center;
+        position: relative;
     }
 
     .fathers-grid {
@@ -825,6 +831,8 @@ body {
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  right: var(--spacing-md);
 }
 
 #theme-toggle:hover {
