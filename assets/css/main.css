@@ -408,10 +408,8 @@ footer .container {
     }
 
     .work-link {
-        padding: var(--spacing-sm) var(--spacing-md);
-        flex-direction: column;
-        align-items: flex-start;
-        gap: var(--spacing-xs);
+        display: inline;
+        padding: 0;
     }
 
     .work-title {
@@ -497,7 +495,8 @@ footer .container {
     }
 
     .work-link {
-        padding: var(--spacing-md);
+        display: inline;
+        padding: 0;
     }
 
     .btn {
@@ -662,9 +661,14 @@ footer .container {
         margin-top: 0;
     }
 
+    .author-works {
+        text-align: center;
+    }
+
     .author-works h2 {
         font-size: var(--font-size-xl);
         margin-top: 0;
+        text-align: center;
     }
 
     .work-header {
@@ -699,8 +703,23 @@ footer .container {
     }
 
     /* Better spacing for lists */
+    .works-list {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 100%;
+        padding: 0;
+    }
+
     .works-list li {
-        margin-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
+        list-style: disc;
+        list-style-position: outside;
+        margin-left: 1.5em;
+        text-align: left;
+    }
+
+    .works-list li::marker {
+        color: var(--color-secondary);
     }
 
     /* Ensure images are responsive */
@@ -744,6 +763,7 @@ footer .container {
 /* Works List */
 .author-works {
   margin-top: 0;
+  text-align: center;
 }
 
 .author-works h2 {
@@ -753,51 +773,52 @@ footer .container {
   border-bottom: 2px solid var(--color-primary);
   display: inline-block;
   padding-bottom: var(--spacing-xs);
+  text-align: center;
 }
 
 .works-list {
-  list-style: none;
   padding: 0;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .works-list li {
   margin-bottom: var(--spacing-sm);
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 0;
+  margin-left: 1.5em;
+  text-align: left;
+}
+
+.works-list li::marker {
+  color: var(--color-secondary);
 }
 
 .work-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--spacing-md);
-  background-color: var(--color-bg-alt);
-  border-radius: var(--radius-sm);
-  border: 1px solid transparent;
+  display: inline;
   text-decoration: none;
-  color: var(--color-text);
-  transition: all 0.2s ease;
+  color: var(--color-secondary);
+  transition: color 0.2s ease;
   /* Better touch interaction */
   touch-action: manipulation;
-  min-height: 44px; /* Minimum touch target */
 }
 
 .work-link:hover {
-  background-color: white;
-  border-color: var(--color-primary);
-  transform: translateX(4px);
-  text-decoration: none;
-  box-shadow: var(--shadow-sm);
+  color: var(--color-primary);
+  text-decoration: underline;
 }
 
 .work-link:active {
-  transform: translateX(2px);
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .work-title {
-  font-weight: 600;
-  font-family: var(--font-serif);
-  font-size: var(--font-size-lg);
-  color: var(--color-primary);
+  font-weight: 400;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  color: var(--color-secondary);
 }
 
 .work-type {
@@ -1075,8 +1096,20 @@ body.dark-mode .work-container {
     color: #e0e0e0;
 }
 
+body.dark-mode .work-link {
+  color: var(--color-secondary);
+}
+
 body.dark-mode .work-link:hover {
-  background-color: #333;
+  color: var(--color-primary);
+}
+
+body.dark-mode .work-title {
+  color: var(--color-secondary);
+}
+
+body.dark-mode .works-list li::marker {
+  color: var(--color-secondary);
 }
 
 /* Dark mode button styles - make back button more visible */
