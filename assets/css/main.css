@@ -382,7 +382,7 @@ footer .container {
     .breadcrumbs ol {
         flex-wrap: nowrap;
         overflow: hidden;
-        align-items: center;
+        align-items: baseline;
     }
     
     .breadcrumbs li {
@@ -392,12 +392,14 @@ footer .container {
         min-width: 0;
         flex: 0 1 auto;
         display: inline-flex;
-        align-items: center;
+        align-items: baseline;
+        vertical-align: baseline;
         line-height: 1.4;
     }
     
     .breadcrumbs li:last-child {
         flex: 1 1 auto;
+        min-width: 0;
     }
     
     .breadcrumbs li + li::before {
@@ -405,6 +407,7 @@ footer .container {
         flex-shrink: 0;
         white-space: pre;
         line-height: 1.4;
+        vertical-align: baseline;
     }
     
     .breadcrumbs a,
@@ -414,6 +417,7 @@ footer .container {
         text-overflow: ellipsis;
         white-space: nowrap;
         line-height: 1.4;
+        vertical-align: baseline;
     }
 
     .work-link {
@@ -562,7 +566,7 @@ footer .container {
     .breadcrumbs ol {
         flex-wrap: nowrap;
         overflow: hidden;
-        align-items: center;
+        align-items: baseline;
     }
     
     .breadcrumbs li {
@@ -572,12 +576,14 @@ footer .container {
         min-width: 0;
         flex: 0 1 auto;
         display: inline-flex;
-        align-items: center;
+        align-items: baseline;
+        vertical-align: baseline;
         line-height: 1.4;
     }
     
     .breadcrumbs li:last-child {
         flex: 1 1 auto;
+        min-width: 0;
     }
     
     .breadcrumbs li + li::before {
@@ -585,6 +591,7 @@ footer .container {
         flex-shrink: 0;
         white-space: pre;
         line-height: 1.4;
+        vertical-align: baseline;
     }
     
     .breadcrumbs a,
@@ -594,6 +601,7 @@ footer .container {
         text-overflow: ellipsis;
         white-space: nowrap;
         line-height: 1.4;
+        vertical-align: baseline;
     }
 
     .fathers-grid {
@@ -813,20 +821,34 @@ footer .container {
   margin-bottom: var(--spacing-lg);
   font-size: 0.75rem;
   line-height: 1.5;
+  overflow: hidden;
 }
 
 .breadcrumbs ol {
   display: flex;
   list-style: none;
   padding: 0;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
 }
 
 .breadcrumbs li {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
   line-height: 1.5;
+  vertical-align: baseline;
+}
+
+.breadcrumbs li:first-child {
+  flex-shrink: 0;
+}
+
+.breadcrumbs li:last-child {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .breadcrumbs li + li::before {
@@ -834,12 +856,15 @@ footer .container {
   margin: 0 var(--spacing-sm);
   color: var(--color-text-light);
   line-height: 1.5;
+  flex-shrink: 0;
+  vertical-align: baseline;
 }
 
 .breadcrumbs a {
   color: var(--color-text-light);
   display: inline;
   line-height: 1.5;
+  vertical-align: baseline;
 }
 
 .breadcrumbs a:hover {
@@ -851,6 +876,11 @@ footer .container {
   font-weight: 500;
   display: inline;
   line-height: 1.5;
+  vertical-align: baseline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 /* Work Display */
