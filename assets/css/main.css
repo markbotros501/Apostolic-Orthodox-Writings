@@ -326,12 +326,12 @@ footer .container {
     
     /* Move works list further to the left to match chapter-list positioning */
     .author-profile .works-list {
-        margin-left: calc(-1 * var(--spacing-md));
-        width: calc(100% + 2 * var(--spacing-md));
+        margin-left: calc(-1 * var(--spacing-md)) !important;
+        width: calc(100% + 2 * var(--spacing-md)) !important;
     }
     
     .author-profile .works-list li {
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 
     .work-container {
@@ -532,14 +532,14 @@ footer .container {
         padding: 0 var(--spacing-md) var(--spacing-sm);
     }
     
-    /* Move works list further to the left */
+    /* Move works list further to the left to match chapter-list positioning */
     .author-profile .works-list {
-        margin-left: calc(-1 * var(--spacing-md));
-        width: calc(100% + 2 * var(--spacing-md));
+        margin-left: calc(-1 * var(--spacing-md)) !important;
+        width: calc(100% + 2 * var(--spacing-md)) !important;
     }
     
     .author-profile .works-list li {
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 
     .work-container {
@@ -834,14 +834,14 @@ footer .container {
         padding: 0;
     }
     
-    /* Move works list further to the left on mobile */
+    /* Move works list further to the left on mobile to match chapter-list positioning */
     .author-profile .works-list {
-        margin-left: calc(-1 * var(--spacing-sm));
-        width: calc(100% + 2 * var(--spacing-sm));
+        margin-left: calc(-1 * var(--spacing-md)) !important;
+        width: calc(100% + 2 * var(--spacing-md)) !important;
     }
     
     .author-profile .works-list li {
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 
     .works-list li {
