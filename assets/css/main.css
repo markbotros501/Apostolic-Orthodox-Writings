@@ -347,7 +347,9 @@ footer .container {
     }
 
     .work-content h1 {
+        font-family: var(--font-serif) !important;
         font-size: var(--font-size-xl);
+        font-weight: 700 !important;
     }
 
     .work-content h2 {
@@ -669,7 +671,9 @@ footer .container {
     }
 
     .author-works h2 {
+        font-family: var(--font-serif);
         font-size: var(--font-size-lg);
+        font-weight: 700;
         margin-top: 0;
         text-align: center;
     }
@@ -769,7 +773,9 @@ footer .container {
 }
 
 .author-works h2 {
+  font-family: var(--font-serif);
   font-size: var(--font-size-xl);
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: var(--spacing-md);
   border-bottom: 2px solid var(--color-primary);
@@ -938,6 +944,11 @@ body:has(.work-container) .breadcrumbs {
   max-width: 100% !important;
   padding: var(--spacing-xs) var(--spacing-md) var(--spacing-md) !important;
   margin-top: 0;
+}
+
+.work-content h1 {
+  font-family: var(--font-serif) !important;
+  font-weight: 700 !important;
 }
 
 /* Override styles from uploaded HTML files to reduce margins */
