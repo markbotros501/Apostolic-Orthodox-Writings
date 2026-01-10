@@ -426,19 +426,11 @@ footer .container {
         width: 100%;
     }
 
-    .work-title {
-        font-size: var(--font-size-sm);
-        display: inline-block;
-        width: calc(100% - 0.5em);
-        vertical-align: top;
-        white-space: nowrap;
-    }
-
     .works-list li {
         margin-left: 0;
         list-style: none !important;
         position: relative;
-        padding-left: 0.5em;
+        padding-left: 1.2em;
         width: 100%;
     }
 
@@ -448,10 +440,23 @@ footer .container {
         position: absolute;
         left: 0;
         top: 0;
+        line-height: 1.5;
     }
 
     .works-list li::marker {
         display: none !important;
+    }
+
+    .work-link {
+        display: block;
+        width: 100%;
+    }
+
+    .work-title {
+        font-size: var(--font-size-sm);
+        display: block;
+        width: 100%;
+        white-space: nowrap;
     }
 
     .btn {
@@ -792,7 +797,7 @@ footer .container {
         margin-left: 0;
         text-align: left;
         position: relative;
-        padding-left: 0.5em;
+        padding-left: 1.2em;
         width: 100%;
     }
 
@@ -802,6 +807,7 @@ footer .container {
         position: absolute;
         left: 0;
         top: 0;
+        line-height: 1.5;
     }
 
     .works-list li::marker {
@@ -815,9 +821,8 @@ footer .container {
 
     .work-title {
         font-size: var(--font-size-sm);
-        display: inline-block;
-        width: calc(100% - 0.5em);
-        vertical-align: top;
+        display: block;
+        width: 100%;
         white-space: nowrap;
     }
 
