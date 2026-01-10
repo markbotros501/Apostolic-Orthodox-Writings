@@ -245,6 +245,11 @@ footer .container {
     main.container:has(.work-container) {
         padding: 0 !important;
     }
+    
+    /* Reduce header margin on work pages for better spacing */
+    body:has(.work-container) header {
+        margin-bottom: var(--spacing-sm);
+    }
 
     header .container {
         padding: var(--spacing-xs) var(--spacing-sm);
@@ -340,12 +345,16 @@ footer .container {
 
     .breadcrumbs {
         font-size: var(--font-size-xs);
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
         padding: 0 var(--spacing-sm);
     }
 
     .breadcrumbs ol {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+    }
+    
+    .breadcrumbs li + li::before {
+        margin: 0 var(--spacing-xs);
     }
 
     .work-link {
@@ -383,6 +392,11 @@ footer .container {
     /* Remove padding from main container on work pages for full-width text */
     main.container:has(.work-container) {
         padding: 0 !important;
+    }
+    
+    /* Reduce header margin on work pages for better spacing */
+    body:has(.work-container) header {
+        margin-bottom: var(--spacing-md);
     }
 
     header .container {
@@ -471,9 +485,22 @@ footer .container {
 
 /* General Mobile Improvements (all mobile sizes) */
 @media (max-width: 768px) {
+    /* Reduce header margin on work pages for better spacing */
+    body:has(.work-container) header {
+        margin-bottom: var(--spacing-md);
+    }
+    
     header .container {
         justify-content: center;
         position: relative;
+    }
+    
+    .breadcrumbs ol {
+        flex-wrap: nowrap;
+    }
+    
+    .breadcrumbs li + li::before {
+        margin: 0 var(--spacing-xs);
     }
 
     .fathers-grid {
