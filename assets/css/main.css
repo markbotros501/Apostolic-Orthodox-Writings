@@ -303,7 +303,7 @@ footer .container {
     }
 
     .author-profile {
-        padding: var(--spacing-xs) var(--spacing-md) var(--spacing-sm);
+        padding: 0 var(--spacing-md) var(--spacing-sm);
     }
 
     .author-header {
@@ -361,7 +361,7 @@ footer .container {
 
     .breadcrumbs {
         font-size: 0.7rem;
-        margin-bottom: var(--spacing-xs);
+        margin-bottom: 0;
         padding: 0 var(--spacing-sm);
         line-height: 1.4;
     }
@@ -467,7 +467,7 @@ footer .container {
     }
 
     .author-profile {
-        padding: var(--spacing-xs) var(--spacing-lg) var(--spacing-sm);
+        padding: 0 var(--spacing-lg) var(--spacing-sm);
     }
 
     .work-container {
@@ -558,6 +558,7 @@ footer .container {
     .breadcrumbs {
         font-size: 0.75rem;
         line-height: 1.4;
+        margin-bottom: 0;
     }
     
     .breadcrumbs ol {
