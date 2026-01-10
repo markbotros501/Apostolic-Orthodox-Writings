@@ -1061,13 +1061,19 @@ body {
   color: var(--color-primary);
 }
 
-/* Center the title in work index pages */
+/* Format the title in work index pages to match the "Works" heading style */
 .work-index h2,
 .work-content .work-index h2,
 #work-content .work-index h2 {
-  text-align: center !important;
+  font-family: var(--font-serif);
+  font-size: var(--font-size-xl);
+  font-weight: 700;
   margin-top: 0;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+  padding-bottom: var(--spacing-xs);
+  text-align: center;
 }
 
 .loading-spinner {
