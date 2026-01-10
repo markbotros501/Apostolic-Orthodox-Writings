@@ -347,11 +347,13 @@ footer .container {
         font-size: 0.7rem;
         margin-bottom: var(--spacing-xs);
         padding: 0 var(--spacing-sm);
+        line-height: 1.4;
     }
 
     .breadcrumbs ol {
         flex-wrap: nowrap;
         overflow: hidden;
+        align-items: center;
     }
     
     .breadcrumbs li {
@@ -360,6 +362,9 @@ footer .container {
         text-overflow: ellipsis;
         min-width: 0;
         flex: 0 1 auto;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1.4;
     }
     
     .breadcrumbs li:last-child {
@@ -370,14 +375,16 @@ footer .container {
         margin: 0 0.25rem;
         flex-shrink: 0;
         white-space: pre;
+        line-height: 1.4;
     }
     
     .breadcrumbs a,
     .breadcrumbs li[aria-current="page"] {
-        display: block;
+        display: inline;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        line-height: 1.4;
     }
 
     .work-link {
@@ -520,11 +527,13 @@ footer .container {
     
     .breadcrumbs {
         font-size: 0.75rem;
+        line-height: 1.4;
     }
     
     .breadcrumbs ol {
         flex-wrap: nowrap;
         overflow: hidden;
+        align-items: center;
     }
     
     .breadcrumbs li {
@@ -533,6 +542,9 @@ footer .container {
         text-overflow: ellipsis;
         min-width: 0;
         flex: 0 1 auto;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1.4;
     }
     
     .breadcrumbs li:last-child {
@@ -543,14 +555,16 @@ footer .container {
         margin: 0 0.25rem;
         flex-shrink: 0;
         white-space: pre;
+        line-height: 1.4;
     }
     
     .breadcrumbs a,
     .breadcrumbs li[aria-current="page"] {
-        display: block;
+        display: inline;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        line-height: 1.4;
     }
 
     .fathers-grid {
@@ -728,23 +742,35 @@ footer .container {
 /* Breadcrumbs */
 .breadcrumbs {
   margin-bottom: var(--spacing-lg);
-  font-size: var(--font-size-sm);
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 .breadcrumbs ol {
   display: flex;
   list-style: none;
   padding: 0;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.breadcrumbs li {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.5;
 }
 
 .breadcrumbs li + li::before {
   content: "/";
   margin: 0 var(--spacing-sm);
   color: var(--color-text-light);
+  line-height: 1.5;
 }
 
 .breadcrumbs a {
   color: var(--color-text-light);
+  display: inline;
+  line-height: 1.5;
 }
 
 .breadcrumbs a:hover {
@@ -754,6 +780,8 @@ footer .container {
 .breadcrumbs li[aria-current="page"] {
   color: var(--color-text);
   font-weight: 500;
+  display: inline;
+  line-height: 1.5;
 }
 
 /* Work Display */
