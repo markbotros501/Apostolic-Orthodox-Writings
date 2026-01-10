@@ -109,24 +109,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // Preserve original format by including styles and body content
             document.getElementById('work-content').innerHTML = stylesHTML + bodyContent;
 
-            // Add back to index button to breadcrumb navigation
+            // Remove back button from breadcrumb if it exists (index page shouldn't have it)
             const breadcrumbOl = document.querySelector('.breadcrumbs ol');
             if (breadcrumbOl) {
-                // Remove existing back button if it exists
                 const existingBackButton = breadcrumbOl.querySelector('.breadcrumb-back-button');
                 if (existingBackButton) {
                     existingBackButton.remove();
                 }
-                
-                // Create back button as breadcrumb item
-                const backButtonLi = document.createElement('li');
-                backButtonLi.className = 'breadcrumb-back-button';
-                const backButton = document.createElement('button');
-                backButton.onclick = () => location.reload();
-                backButton.className = 'btn-back-to-index';
-                backButton.textContent = '← Back to Index';
-                backButtonLi.appendChild(backButton);
-                breadcrumbOl.appendChild(backButtonLi);
             }
 
             // Force center alignment on h1 titles after content loads
