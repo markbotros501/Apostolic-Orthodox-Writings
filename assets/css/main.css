@@ -666,7 +666,7 @@ footer .container {
     }
 
     .author-works h2 {
-        font-size: var(--font-size-xl);
+        font-size: var(--font-size-lg);
         margin-top: 0;
         text-align: center;
     }
@@ -767,7 +767,7 @@ footer .container {
 }
 
 .author-works h2 {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-xl);
   margin-top: 0;
   margin-bottom: var(--spacing-md);
   border-bottom: 2px solid var(--color-primary);
