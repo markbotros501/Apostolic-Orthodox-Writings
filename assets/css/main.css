@@ -118,6 +118,60 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);
+    text-align: center;
+}
+
+.fathers-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 100%;
+    display: inline-block;
+    width: 100%;
+}
+
+.fathers-list li {
+    margin-bottom: var(--spacing-sm);
+    list-style: disc;
+    list-style-position: outside;
+    padding-left: 0;
+    margin-left: 1.5em;
+    text-align: left;
+}
+
+.fathers-list li::marker {
+    color: var(--color-secondary);
+}
+
+.father-link {
+    display: inline;
+    text-decoration: none;
+    color: var(--color-secondary);
+    transition: color 0.2s ease;
+    touch-action: manipulation;
+}
+
+.father-link:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.father-link:active {
+    opacity: 0.8;
+}
+
+.father-name {
+    font-weight: 400;
+    font-family: var(--font-sans);
+    font-size: var(--font-size-base);
+    color: var(--color-secondary);
+}
+
+.father-dates {
+    font-size: var(--font-size-base);
+    color: var(--color-secondary);
+    margin-left: var(--spacing-xs);
 }
 
 /* Cards */
@@ -348,8 +402,14 @@ footer .container {
 
     .work-content h1 {
         font-family: var(--font-serif) !important;
-        font-size: var(--font-size-xl);
         font-weight: 700 !important;
+        text-align: center !important;
+        color: #2c3e50 !important;
+        border-bottom: 2px solid #bdc3c7 !important;
+        padding-bottom: 10px !important;
+        margin-bottom: var(--spacing-md) !important;
+        line-height: 1.2 !important;
+        font-size: inherit !important;
     }
 
     .work-content h2 {
@@ -672,10 +732,15 @@ footer .container {
 
     .author-works h2 {
         font-family: var(--font-serif);
-        font-size: var(--font-size-lg);
         font-weight: 700;
         margin-top: 0;
+        margin-bottom: var(--spacing-md);
+        border-bottom: 2px solid #bdc3c7;
+        display: inline-block;
+        padding-bottom: 10px;
         text-align: center;
+        line-height: 1.2;
+        color: #2c3e50;
     }
 
     .work-header {
@@ -774,14 +839,15 @@ footer .container {
 
 .author-works h2 {
   font-family: var(--font-serif);
-  font-size: var(--font-size-xl);
   font-weight: 700;
   margin-top: 0;
   margin-bottom: var(--spacing-md);
-  border-bottom: 2px solid var(--color-primary);
+  border-bottom: 2px solid #bdc3c7;
   display: inline-block;
-  padding-bottom: var(--spacing-xs);
+  padding-bottom: 10px;
   text-align: center;
+  line-height: 1.2;
+  color: #2c3e50;
 }
 
 .works-list {
@@ -949,6 +1015,13 @@ body:has(.work-container) .breadcrumbs {
 .work-content h1 {
   font-family: var(--font-serif) !important;
   font-weight: 700 !important;
+  font-size: inherit !important;
+  text-align: center !important;
+  border-bottom: 2px solid #bdc3c7 !important;
+  padding-bottom: 10px !important;
+  margin-bottom: var(--spacing-md) !important;
+  line-height: 1.2 !important;
+  color: #2c3e50 !important;
 }
 
 /* Override styles from uploaded HTML files to reduce margins */
@@ -1121,6 +1194,23 @@ body.dark-mode .works-list li::marker {
   color: var(--color-secondary);
 }
 
+body.dark-mode .fathers-list li::marker {
+  color: var(--color-secondary);
+}
+
+body.dark-mode .father-link {
+  color: var(--color-secondary);
+}
+
+body.dark-mode .father-link:hover {
+  color: var(--color-primary);
+}
+
+body.dark-mode .father-name,
+body.dark-mode .father-dates {
+  color: var(--color-secondary);
+}
+
 /* Dark mode button styles - make back button more visible */
 body.dark-mode .btn {
   background-color: #e74c3c;
@@ -1147,6 +1237,11 @@ body.dark-mode .work-header h1 {
 
 /* Bottom title (work-content h1 from uploaded HTML) should stay white in dark mode */
 body.dark-mode .work-content h1 {
+  color: #ecf0f1 !important;
+  border-bottom-color: #404040 !important;
+}
+
+body.dark-mode .author-works h2 {
   color: #ecf0f1;
   border-bottom-color: #404040;
 }

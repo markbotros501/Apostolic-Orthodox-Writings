@@ -29,26 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
+        const list = document.createElement('ul');
+        list.className = 'fathers-list';
+
         fathers.forEach(father => {
-            const card = document.createElement('article');
-            card.className = 'card';
-            card.style.cursor = 'pointer';
-
-            // Make card clickable
-            card.addEventListener('click', () => {
-                window.location.href = `author.html?id=${father.id}`;
-            });
-
-            const nameDateRow = document.createElement('div');
-            nameDateRow.className = 'card-header';
-            nameDateRow.innerHTML = `
-        <h3>Saint ${father.name}</h3>
-        <p class="dates">${father.dates}</p>
-      `;
-
-            card.appendChild(nameDateRow);
-            fathersList.appendChild(card);
+            const li = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = `author.html?id=${father.id}`;
+            link.className = 'father-link';
+            link.innerHTML = `<span class="father-name">Saint ${father.name}</span> <span class="father-dates">${father.dates}</span>`;
+            li.appendChild(link);
+            list.appendChild(li);
         });
+
+        fathersList.appendChild(list);
     }
 
 });
