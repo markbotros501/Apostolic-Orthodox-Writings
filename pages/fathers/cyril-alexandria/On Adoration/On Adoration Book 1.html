@@ -52,6 +52,24 @@
         .footnotes a:hover {
             text-decoration: underline;
         }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Highlight footnote references when returning to them */
+        .footnote-ref:target {
+            background-color: yellow;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .footnote-back {
+            margin-left: 10px;
+            font-size: 0.9em;
+        }
+        
         .subheading {
             text-align: center;
             font-weight: bold;
