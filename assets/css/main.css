@@ -338,7 +338,7 @@ footer .container {
     }
 
     .work-content {
-        font-size: 0.95rem;
+        font-size: 0.875rem;
         line-height: 1.7;
         padding: var(--spacing-xs) var(--spacing-sm) var(--spacing-sm) !important;
         margin: 0 !important;
@@ -490,7 +490,7 @@ footer .container {
     }
 
     .work-content {
-        font-size: 1rem;
+        font-size: 0.9375rem;
         padding: var(--spacing-xs) var(--spacing-md) var(--spacing-md) !important;
         margin: 0 !important;
         width: 100% !important;
@@ -527,7 +527,7 @@ footer .container {
     }
 
     .work-content {
-        font-size: 1.05rem;
+        font-size: 0.96875rem;
     }
 }
 
@@ -538,7 +538,7 @@ footer .container {
     }
 
     .work-content {
-        font-size: 1.1rem;
+        font-size: 1rem;
         max-width: 900px;
         margin: 0 auto;
     }
@@ -940,7 +940,7 @@ body:has(.work-container) .breadcrumbs {
 
 .work-content {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 0.9375rem;
   line-height: 1.8;
   color: #2c3e50;
   max-width: 100% !important;
@@ -1026,6 +1026,32 @@ body {
 
 .work-content p {
   margin-bottom: var(--spacing-md);
+}
+
+/* Remove extra spacing from footnotes */
+.work-content p[id^="fn"],
+.work-content .footnotes p {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Remove spacing between footnotes in the footnotes section */
+.work-content .footnotes p + p {
+  margin-top: 0 !important;
+}
+
+/* Reduce spacing after paragraphs that contain footnote references */
+.work-content .paragraph {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Ensure superscript footnote references don't add extra vertical space */
+.work-content sup {
+  line-height: 1;
+  vertical-align: super;
+  font-size: 0.75em;
 }
 
 .work-content h2, .work-content h3 {
