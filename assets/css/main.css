@@ -430,17 +430,12 @@ footer .container {
         margin-left: 0;
         list-style: none !important;
         position: relative;
-        padding-left: 1.2em;
+        padding-left: 0;
         width: 100%;
     }
 
     .works-list li::before {
-        content: "•";
-        color: var(--color-secondary);
-        position: absolute;
-        left: 0;
-        top: 0;
-        line-height: 1.5;
+        display: none !important;
     }
 
     .works-list li::marker {
@@ -797,17 +792,12 @@ footer .container {
         margin-left: 0;
         text-align: left;
         position: relative;
-        padding-left: 1.2em;
+        padding-left: 0;
         width: 100%;
     }
 
     .works-list li::before {
-        content: "•";
-        color: var(--color-secondary);
-        position: absolute;
-        left: 0;
-        top: 0;
-        line-height: 1.5;
+        display: none !important;
     }
 
     .works-list li::marker {
@@ -894,12 +884,16 @@ footer .container {
   list-style: none;
   list-style-position: outside;
   padding-left: 0;
-  margin-left: 1.5em;
+  margin-left: 0;
   text-align: left;
 }
 
 .works-list li::marker {
-  color: var(--color-secondary);
+  display: none;
+}
+
+.works-list li::before {
+  display: none;
 }
 
 .work-link {
@@ -1168,6 +1162,39 @@ body {
   margin-bottom: var(--spacing-md);
   display: block;
   text-align: center;
+}
+
+/* Remove bullet points from chapter list on index pages */
+.chapter-list,
+.work-index .chapter-list,
+.work-content .chapter-list,
+#work-content .chapter-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.chapter-list li,
+.work-index .chapter-list li,
+.work-content .chapter-list li,
+#work-content .chapter-list li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.chapter-list li::marker,
+.work-index .chapter-list li::marker,
+.work-content .chapter-list li::marker,
+#work-content .chapter-list li::marker {
+  display: none;
+}
+
+.chapter-list li::before,
+.work-index .chapter-list li::before,
+.work-content .chapter-list li::before,
+#work-content .chapter-list li::before {
+  display: none;
 }
 
 .loading-spinner {
