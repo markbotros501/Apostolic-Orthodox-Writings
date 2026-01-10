@@ -1287,6 +1287,32 @@ body {
   font-size: 0.75em;
 }
 
+/* Mobile: Prevent superscript footnote numbers from creating extra line spacing */
+@media (max-width: 768px) {
+  .work-content p {
+    line-height: 1.7;
+  }
+
+  .work-content p sup,
+  .work-content .paragraph sup,
+  .work-content sup,
+  #work-content sup {
+    line-height: 0 !important;
+    vertical-align: baseline !important;
+    position: relative;
+    top: -0.5em;
+    font-size: 0.7em;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Ensure paragraphs maintain consistent line-height */
+  .work-content p,
+  .work-content .paragraph {
+    line-height: 1.7 !important;
+  }
+}
+
 .work-content h2, .work-content h3 {
   margin-top: var(--spacing-lg);
   margin-bottom: var(--spacing-md);
