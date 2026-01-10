@@ -108,6 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Preserve original format by including styles and body content
             document.getElementById('work-content').innerHTML = stylesHTML + bodyContent;
+            
+            // Force center alignment on h1 titles after content loads
+            const h1Elements = document.querySelectorAll('#work-content h1, .work-content h1');
+            h1Elements.forEach(h1 => {
+                h1.style.textAlign = 'center';
+            });
         })
         .catch(error => {
             console.error('Error loading work:', error);
@@ -155,6 +161,12 @@ window.loadWorkPart = function (path) {
             // Preserve original format by including styles and body content with back button
             const backButton = `<button onclick="location.reload()" class="btn" style="margin-bottom: 1rem;">← Back to Index</button>`;
             document.getElementById('work-content').innerHTML = stylesHTML + backButton + bodyContent;
+
+            // Force center alignment on h1 titles after content loads
+            const h1Elements = document.querySelectorAll('#work-content h1, .work-content h1');
+            h1Elements.forEach(h1 => {
+                h1.style.textAlign = 'center';
+            });
 
             // Scroll to top
             window.scrollTo(0, 0);

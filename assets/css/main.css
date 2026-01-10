@@ -346,7 +346,8 @@ footer .container {
         max-width: 100% !important;
     }
 
-    .work-content h1 {
+    .work-content h1,
+    #work-content h1 {
         font-family: var(--font-serif) !important;
         font-size: var(--font-size-xl);
         font-weight: 700 !important;
@@ -947,7 +948,8 @@ body:has(.work-container) .breadcrumbs {
   margin-top: 0;
 }
 
-.work-content h1 {
+.work-content h1,
+#work-content h1 {
   font-family: var(--font-serif) !important;
   font-weight: 700 !important;
   text-align: center !important;
@@ -979,6 +981,7 @@ body {
 
 /* Remove width constraints and padding from content elements */
 .work-content h1,
+#work-content h1,
 .work-content .section,
 .work-content .paragraph,
 .work-content .footnotes,
@@ -986,6 +989,12 @@ body {
   max-width: 100% !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+/* Ensure h1 is centered */
+.work-content h1,
+#work-content h1 {
+  text-align: center !important;
 }
 
 /* Mobile: Ensure all content fills screen edge-to-edge */
@@ -1148,9 +1157,11 @@ body.dark-mode .work-header h1 {
 }
 
 /* Bottom title (work-content h1 from uploaded HTML) should stay white in dark mode */
-body.dark-mode .work-content h1 {
-  color: #ecf0f1;
+body.dark-mode .work-content h1,
+body.dark-mode #work-content h1 {
+  color: #ecf0f1 !important;
   border-bottom-color: #404040;
+  text-align: center !important;
 }
 
 body.dark-mode .work-content .scripture-ref {
