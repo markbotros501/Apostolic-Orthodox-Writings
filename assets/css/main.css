@@ -257,7 +257,7 @@ footer {
     }
 
     .card {
-        padding: var(--spacing-lg);
+        padding: 0.625rem var(--spacing-md);
     }
 
     .card-header {
