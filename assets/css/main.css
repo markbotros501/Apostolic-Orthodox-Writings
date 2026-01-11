@@ -623,15 +623,6 @@ footer {
 
 /* General Mobile Improvements (all mobile sizes) */
 @media (max-width: 768px) {
-    /* Reduce header margin on work pages for better spacing */
-    body:has(.work-container) header {
-        margin-bottom: var(--spacing-md);
-    }
-    
-    /* Reduce header margin on author pages for better spacing */
-    body:has(.author-profile) header {
-        margin-bottom: var(--spacing-sm);
-    }
     
     header .container {
         justify-content: center;
