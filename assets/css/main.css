@@ -115,9 +115,10 @@ nav ul {
 
 /* Fathers Grid */
 .fathers-grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: var(--spacing-lg);
+    width: 100%;
 }
 
 /* Cards */
@@ -131,6 +132,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100%;
     cursor: pointer;
     /* Better touch interaction */
     touch-action: manipulation;
@@ -257,7 +259,7 @@ footer {
     }
 
     .card {
-        padding: 0.625rem var(--spacing-md);
+        padding: var(--spacing-lg);
     }
 
     .card-header {
@@ -490,7 +492,7 @@ footer {
     }
 
     .card {
-        padding: 0.75rem var(--spacing-md);
+        padding: var(--spacing-lg);
     }
 
     .author-profile {
@@ -677,7 +679,8 @@ footer {
     }
 
     .fathers-grid {
-        gap: 0.625rem;
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
     }
 
     .card-header {
