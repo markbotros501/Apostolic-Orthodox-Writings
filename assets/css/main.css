@@ -281,7 +281,11 @@ footer {
     }
 
     .author-profile {
-        padding: 0 var(--spacing-md) var(--spacing-sm);
+        padding: 0.625rem var(--spacing-md);
+        background-color: white;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-sm);
     }
 
     .author-header {
@@ -494,7 +498,11 @@ footer {
     }
 
     .author-profile {
-        padding: 0 var(--spacing-md) var(--spacing-sm);
+        padding: 0.625rem var(--spacing-md);
+        background-color: white;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-sm);
     }
     
     /* Move works list further to the left to match chapter-list positioning */
