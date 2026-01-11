@@ -229,29 +229,9 @@ footer {
         padding: 0 var(--spacing-sm);
     }
 
-    /* Add padding to main container on index/author pages */
+    /* Add padding to main container on all pages */
     main.container {
         padding: 0 var(--spacing-sm) !important;
-    }
-    
-    /* Further reduce padding for author pages to move works list left */
-    main.container:has(.author-profile) {
-        padding: 0 var(--spacing-xs) !important;
-    }
-
-    /* Remove padding from main container on work pages for full-width text */
-    main.container:has(.work-container) {
-        padding: 0 !important;
-    }
-    
-    /* Reduce header margin on work pages for better spacing */
-    body:has(.work-container) header {
-        margin-bottom: var(--spacing-sm);
-    }
-    
-    /* Reduce header margin on author pages for better spacing */
-    body:has(.author-profile) header {
-        margin-bottom: var(--spacing-xs);
     }
 
     header .container {
@@ -496,29 +476,9 @@ footer {
         padding: 0 var(--spacing-md);
     }
 
-    /* Add padding to main container on index/author pages */
+    /* Add padding to main container on all pages */
     main.container {
         padding: 0 var(--spacing-lg) !important;
-    }
-    
-    /* Ensure author pages have correct container padding for works list alignment */
-    main.container:has(.author-profile) {
-        padding: 0 var(--spacing-lg) !important;
-    }
-
-    /* Remove padding from main container on work pages for full-width text */
-    main.container:has(.work-container) {
-        padding: 0 !important;
-    }
-    
-    /* Reduce header margin on work pages for better spacing */
-    body:has(.work-container) header {
-        margin-bottom: var(--spacing-md);
-    }
-    
-    /* Reduce header margin on author pages for better spacing */
-    body:has(.author-profile) header {
-        margin-bottom: var(--spacing-sm);
     }
 
     header .container {
@@ -1647,10 +1607,6 @@ html, body {
     }
     
     /* Ensure main container has no padding on work pages only */
-    body > main.container:has(.work-container) {
-        padding: 0 !important;
-        margin: 0 !important;
-    }
 }
 
 /* Improve text readability on mobile */
