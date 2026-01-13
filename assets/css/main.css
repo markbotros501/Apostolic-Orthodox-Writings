@@ -464,6 +464,12 @@ footer {
         display: block;
         width: 100%;
         white-space: nowrap;
+        text-align: center;
+    }
+    
+    /* Center red links on mobile */
+    .work-link {
+        text-align: center;
     }
 
     .btn {
@@ -577,6 +583,12 @@ footer {
         overflow: hidden;
         text-overflow: ellipsis;
         width: 100%;
+        text-align: center;
+    }
+    
+    /* Center red links on mobile */
+    .work-link {
+        text-align: center;
     }
 
     .works-list li {
@@ -859,6 +871,7 @@ footer {
         font-family: var(--font-sans);
         font-size: var(--font-size-sm);
         color: var(--color-secondary);
+        text-align: center;
     }
 
     .work-title {
@@ -880,6 +893,7 @@ footer {
         display: block;
         width: 100%;
         white-space: nowrap;
+        text-align: center;
     }
 
     /* Ensure images are responsive */
