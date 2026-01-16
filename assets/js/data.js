@@ -23,7 +23,7 @@ const db = {
             works: [
                 {
                     id: "on-adoration",
-                    title: "On Adoration in Spirit and Truth",
+                    title: "On Adoration and Worship in Spirit and Truth",
                     type: "treatise",
                     path: "pages/fathers/cyril-alexandria/works/index.html"
                 }
