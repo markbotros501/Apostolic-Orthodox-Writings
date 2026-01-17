@@ -463,7 +463,9 @@ footer {
         font-size: var(--font-size-sm);
         display: block;
         width: 100%;
-        white-space: nowrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
 
     .btn {
@@ -573,9 +575,9 @@ footer {
     .work-content .chapter-list a,
     #work-content .chapter-list a {
         display: block;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
         width: 100%;
     }
 
@@ -879,7 +881,9 @@ footer {
         font-size: var(--font-size-sm);
         display: block;
         width: 100%;
-        white-space: nowrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
 
     /* Ensure images are responsive */
@@ -1414,6 +1418,9 @@ body {
   display: block;
   width: 100%;
   transition: color 0.2s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .chapter-list a:hover,
