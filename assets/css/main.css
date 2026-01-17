@@ -1000,6 +1000,7 @@ footer {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
+  white-space: nowrap;
 }
 
 .work-type {
