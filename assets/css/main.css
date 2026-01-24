@@ -306,14 +306,16 @@ footer {
         line-height: 1.6;
     }
     
-    /* Move works list further to the left to match chapter-list positioning */
+    /* Center works list on mobile */
     .author-profile .works-list {
-        margin-left: calc(-1 * var(--spacing-xs) - var(--spacing-md)) !important;
-        width: calc(100% + 2 * var(--spacing-xs) + 2 * var(--spacing-md)) !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        text-align: center;
     }
     
     .author-profile .works-list li {
         padding-left: 0 !important;
+        text-align: center;
     }
 
     .work-container {
@@ -516,14 +518,16 @@ footer {
         box-shadow: var(--shadow-sm);
     }
     
-    /* Move works list further to the left to match chapter-list positioning */
+    /* Center works list on mobile */
     .author-profile .works-list {
-        margin-left: calc(-1 * var(--spacing-lg) - var(--spacing-md)) !important;
-        width: calc(100% + 2 * var(--spacing-lg) + 2 * var(--spacing-md)) !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        text-align: center;
     }
     
     .author-profile .works-list li {
         padding-left: 0 !important;
+        text-align: center;
     }
 
     .work-container {
@@ -827,7 +831,7 @@ footer {
 
     /* Better spacing for lists */
     .works-list {
-        text-align: left;
+        text-align: center;
         margin: 0 auto;
         max-width: 100%;
         padding: 0;
@@ -836,8 +840,8 @@ footer {
     /* Move works list further to the left on mobile to match chapter-list positioning */
     /* Note: This applies to screens up to 480px. For 481-768px, see the more specific breakpoint above. */
     .author-profile .works-list {
-        margin-left: calc(-1 * var(--spacing-xs) - var(--spacing-md)) !important;
-        width: calc(100% + 2 * var(--spacing-xs) + 2 * var(--spacing-md)) !important;
+        margin-left: 0 !important;
+        width: 100% !important;
     }
     
     .author-profile .works-list li {
@@ -848,7 +852,7 @@ footer {
         margin-bottom: var(--spacing-sm);
         list-style: none !important;
         margin-left: 0;
-        text-align: left;
+        text-align: center;
         position: relative;
         padding-left: 0;
         width: 100%;
