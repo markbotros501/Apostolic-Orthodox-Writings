@@ -319,11 +319,10 @@ footer {
     }
 
     .work-container {
-        padding: 0 !important;
-        margin: 0 !important;
-        border-radius: 0 !important;
-        border-left: none !important;
-        border-right: none !important;
+        padding: 0.625rem var(--spacing-md) !important;
+        margin: 0 auto !important;
+        border-radius: var(--radius-md) !important;
+        border: 1px solid var(--color-border) !important;
         max-width: 100% !important;
         width: 100% !important;
     }
@@ -526,11 +525,10 @@ footer {
     }
 
     .work-container {
-        padding: 0 !important;
-        margin: 0 !important;
-        border-radius: 0 !important;
-        border-left: none !important;
-        border-right: none !important;
+        padding: var(--spacing-lg) !important;
+        margin: 0 auto !important;
+        border-radius: var(--radius-md) !important;
+        border: 1px solid var(--color-border) !important;
         max-width: 100% !important;
         width: 100% !important;
     }
@@ -614,11 +612,15 @@ footer {
     }
 
     .card {
-        padding: 0.75rem var(--spacing-md);
+        padding: var(--spacing-lg);
+    }
+
+    .author-profile {
+        padding: var(--spacing-lg);
     }
 
     .work-container {
-        padding: var(--spacing-xs) var(--spacing-xl) var(--spacing-xl);
+        padding: var(--spacing-lg);
     }
 
     .work-content {
@@ -1108,9 +1110,8 @@ body:has(.work-container) .breadcrumbs {
   background-color: white;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: var(--spacing-xs) var(--spacing-lg) var(--spacing-lg);
+  padding: var(--spacing-lg);
   box-shadow: var(--shadow-sm);
-  max-width: 95%;
   width: 100%;
   margin: 0 auto;
 }
