@@ -422,6 +422,7 @@ footer {
         display: block;
         padding: 0;
         width: 100%;
+        text-align: center;
     }
 
     .works-list li {
@@ -447,6 +448,7 @@ footer {
         font-family: var(--font-sans);
         font-size: var(--font-size-sm);
         color: var(--color-secondary);
+        text-align: center;
     }
 
     .work-title {
@@ -470,6 +472,7 @@ footer {
         word-wrap: normal;
         overflow-wrap: normal;
         white-space: normal;
+        text-align: center;
     }
 
     .btn {
@@ -560,6 +563,7 @@ footer {
         font-weight: 400;
         font-family: var(--font-sans);
         color: var(--color-secondary);
+        text-align: center;
     }
 
     .work-title {
@@ -583,6 +587,7 @@ footer {
         overflow-wrap: normal;
         white-space: normal;
         width: 100%;
+        text-align: center;
     }
 
     .works-list li {
@@ -864,6 +869,7 @@ footer {
         font-family: var(--font-sans);
         font-size: var(--font-size-sm);
         color: var(--color-secondary);
+        text-align: center;
     }
 
     .work-title {
@@ -887,6 +893,7 @@ footer {
         word-wrap: normal;
         overflow-wrap: normal;
         white-space: normal;
+        text-align: center;
     }
 
     /* Ensure images are responsive */
