@@ -75,6 +75,20 @@ const db = {
             dates: "c. 130 – c. 202 AD",
             bio: "Irenaeus was a Greek bishop noted for his role in guiding and expanding Christian communities in the southern regions of present-day France and, more widely, for the development of Christian theology by combating heresy and defining orthodoxy.",
             works: []
+        },
+        {
+            id: "john-chrysostom",
+            name: "John Chrysostom",
+            dates: "c. 349 – 407 AD",
+            bio: "Archbishop of Constantinople and an important Early Church Father. He is known for his eloquent preaching and public speaking, his denunciation of abuse of authority by both ecclesiastical and political leaders, and his Divine Liturgy of St. John Chrysostom.",
+            works: [
+                {
+                    id: "commentary-on-job",
+                    title: "Commentary on Job",
+                    type: "commentary",
+                    path: "pages/fathers/john-chrysostom/Commentary on Job/index.html"
+                }
+            ]
         }
     ]
 };
