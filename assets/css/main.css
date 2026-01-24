@@ -306,16 +306,14 @@ footer {
         line-height: 1.6;
     }
     
-    /* Center works list on mobile */
+    /* Move works list further to the left to match chapter-list positioning */
     .author-profile .works-list {
-        margin-left: 0 !important;
-        width: 100% !important;
-        text-align: center;
+        margin-left: calc(-1 * var(--spacing-xs) - var(--spacing-md)) !important;
+        width: calc(100% + 2 * var(--spacing-xs) + 2 * var(--spacing-md)) !important;
     }
     
     .author-profile .works-list li {
         padding-left: 0 !important;
-        text-align: center;
     }
 
     .work-container {
