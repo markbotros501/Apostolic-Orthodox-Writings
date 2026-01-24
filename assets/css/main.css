@@ -424,7 +424,6 @@ footer {
         display: block;
         padding: 0;
         width: 100%;
-        text-align: center;
     }
 
     .works-list li {
@@ -450,7 +449,6 @@ footer {
         font-family: var(--font-sans);
         font-size: var(--font-size-sm);
         color: var(--color-secondary);
-        text-align: center;
     }
 
     .work-title {
@@ -474,7 +472,6 @@ footer {
         word-wrap: normal;
         overflow-wrap: normal;
         white-space: normal;
-        text-align: center;
     }
 
     .btn {
@@ -518,16 +515,14 @@ footer {
         box-shadow: var(--shadow-sm);
     }
     
-    /* Center works list on mobile */
+    /* Move works list further to the left to match chapter-list positioning */
     .author-profile .works-list {
-        margin-left: 0 !important;
-        width: 100% !important;
-        text-align: center;
+        margin-left: calc(-1 * var(--spacing-lg) - var(--spacing-md)) !important;
+        width: calc(100% + 2 * var(--spacing-lg) + 2 * var(--spacing-md)) !important;
     }
     
     .author-profile .works-list li {
         padding-left: 0 !important;
-        text-align: center;
     }
 
     .work-container {
@@ -567,7 +562,6 @@ footer {
         font-weight: 400;
         font-family: var(--font-sans);
         color: var(--color-secondary);
-        text-align: center;
     }
 
     .work-title {
@@ -591,7 +585,6 @@ footer {
         overflow-wrap: normal;
         white-space: normal;
         width: 100%;
-        text-align: center;
     }
 
     .works-list li {
@@ -831,7 +824,7 @@ footer {
 
     /* Better spacing for lists */
     .works-list {
-        text-align: center;
+        text-align: left;
         margin: 0 auto;
         max-width: 100%;
         padding: 0;
@@ -840,8 +833,8 @@ footer {
     /* Move works list further to the left on mobile to match chapter-list positioning */
     /* Note: This applies to screens up to 480px. For 481-768px, see the more specific breakpoint above. */
     .author-profile .works-list {
-        margin-left: 0 !important;
-        width: 100% !important;
+        margin-left: calc(-1 * var(--spacing-xs) - var(--spacing-md)) !important;
+        width: calc(100% + 2 * var(--spacing-xs) + 2 * var(--spacing-md)) !important;
     }
     
     .author-profile .works-list li {
@@ -852,7 +845,7 @@ footer {
         margin-bottom: var(--spacing-sm);
         list-style: none !important;
         margin-left: 0;
-        text-align: center;
+        text-align: left;
         position: relative;
         padding-left: 0;
         width: 100%;
@@ -873,7 +866,6 @@ footer {
         font-family: var(--font-sans);
         font-size: var(--font-size-sm);
         color: var(--color-secondary);
-        text-align: center;
     }
 
     .work-title {
@@ -897,7 +889,6 @@ footer {
         word-wrap: normal;
         overflow-wrap: normal;
         white-space: normal;
-        text-align: center;
     }
 
     /* Ensure images are responsive */
