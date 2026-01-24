@@ -79,7 +79,7 @@ const db = {
         {
             id: "john-chrysostom",
             name: "John Chrysostom",
-            dates: "c. 349 – 407 AD",
+            dates: "349 – 407 AD",
             bio: "Archbishop of Constantinople and an important Early Church Father. He is known for his eloquent preaching and public speaking, his denunciation of abuse of authority by both ecclesiastical and political leaders, and his Divine Liturgy of St. John Chrysostom.",
             works: [
                 {
