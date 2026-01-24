@@ -830,6 +830,7 @@ footer {
         margin: 0 auto;
         max-width: 100%;
         padding: 0;
+        margin-top: var(--spacing-md);
     }
     
     /* Move works list further to the left on mobile to match chapter-list positioning */
