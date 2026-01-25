@@ -864,7 +864,7 @@ footer {
     }
 
     .works-list li {
-        margin-bottom: var(--spacing-xs);
+        margin-bottom: 0.125rem;
         list-style: none !important;
         margin-left: 0;
         text-align: left;
@@ -911,6 +911,14 @@ footer {
         word-wrap: normal;
         overflow-wrap: normal;
         white-space: normal;
+    }
+
+    /* Reduce spacing between chapter list items on mobile */
+    .chapter-list li,
+    .work-index .chapter-list li,
+    .work-content .chapter-list li,
+    #work-content .chapter-list li {
+        margin-bottom: 0.125rem;
     }
 
     /* Ensure images are responsive */
