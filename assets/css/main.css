@@ -772,10 +772,10 @@ footer {
         margin-bottom: var(--spacing-lg);
         padding-bottom: var(--spacing-sm);
         position: relative;
-        z-index: 1;
+        z-index: 0;
     }
 
-    /* Hide underline on all lines except the last - text needs to be above the mask */
+    /* Hide underline on all lines except the last using pseudo-element to mask underline area */
     .work-index h2::before,
     .work-content .work-index h2::before,
     #work-content .work-index h2::before {
@@ -1413,15 +1413,10 @@ body {
   text-decoration-skip-ink: none;
   -webkit-text-decoration-skip-ink: none;
   position: relative;
+  z-index: 0;
 }
 
-/* Hide underline on all lines except the last - text needs to be above the mask */
-.work-index h2,
-.work-content .work-index h2,
-#work-content .work-index h2 {
-  z-index: 1;
-}
-
+/* Hide underline on all lines except the last using pseudo-element to mask underline area */
 .work-index h2::before,
 .work-content .work-index h2::before,
 #work-content .work-index h2::before {
