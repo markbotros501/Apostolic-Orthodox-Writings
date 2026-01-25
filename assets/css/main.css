@@ -766,7 +766,6 @@ footer {
         word-wrap: normal;
         overflow-wrap: normal;
         text-decoration: underline;
-        text-decoration-color: var(--color-secondary);
         text-underline-offset: 0.5em;
         margin-bottom: var(--spacing-lg);
         padding-bottom: var(--spacing-sm);
@@ -785,7 +784,6 @@ footer {
         padding-bottom: var(--spacing-sm);
         text-align: center;
         text-decoration: underline !important;
-        text-decoration-color: var(--color-secondary) !important;
         text-underline-offset: 0.5em;
         border-bottom: none !important;
         display: block;
@@ -956,7 +954,6 @@ footer {
   display: block;
   text-align: center;
   text-decoration: underline !important;
-  text-decoration-color: var(--color-secondary) !important;
   text-underline-offset: 0.5em;
   border-bottom: none !important;
   line-height: 1.2;
@@ -1393,7 +1390,6 @@ body {
   display: block;
   text-align: center;
   text-decoration: underline;
-  text-decoration-color: var(--color-secondary);
   text-underline-offset: 0.5em;
 }
 
