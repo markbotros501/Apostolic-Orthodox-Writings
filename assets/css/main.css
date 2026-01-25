@@ -766,8 +766,8 @@ footer {
         word-wrap: normal;
         overflow-wrap: normal;
         text-decoration: none;
-        margin-bottom: var(--spacing-lg);
-        padding-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+        padding-bottom: 0.25em;
         position: relative;
     }
 
@@ -782,7 +782,6 @@ footer {
         right: 0;
         height: 1px;
         background: currentColor;
-        margin-top: 0.5em;
     }
 
     .author-works {
@@ -794,11 +793,11 @@ footer {
         font-size: var(--font-size-xl);
         font-weight: 700;
         margin-top: 0;
-        margin-bottom: var(--spacing-lg);
-        padding-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-md);
+        padding-bottom: 0.25em;
         text-align: center;
         text-decoration: underline !important;
-        text-underline-offset: 0.5em;
+        text-underline-offset: 0.25em;
         border-bottom: none !important;
         display: block;
         line-height: 1.2;
@@ -963,12 +962,12 @@ footer {
   font-size: 2rem;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: var(--spacing-lg);
-  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: 0.25em;
   display: block;
   text-align: center;
   text-decoration: underline !important;
-  text-underline-offset: 0.5em;
+  text-underline-offset: 0.25em;
   border-bottom: none !important;
   line-height: 1.2;
 }
@@ -1399,8 +1398,8 @@ body {
   font-size: var(--font-size-xl);
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: var(--spacing-lg);
-  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  padding-bottom: 0.25em;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -1418,7 +1417,6 @@ body {
   right: 0;
   height: 1px;
   background: currentColor;
-  margin-top: 0.5em;
 }
 
 /* Remove bullet points from chapter list on index pages */
