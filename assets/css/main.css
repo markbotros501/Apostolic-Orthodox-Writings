@@ -765,29 +765,24 @@ footer {
         font-size: var(--font-size-lg);
         word-wrap: normal;
         overflow-wrap: normal;
-        text-decoration: underline;
-        text-underline-offset: 0.5em;
-        text-decoration-skip-ink: none;
-        -webkit-text-decoration-skip-ink: none;
+        text-decoration: none;
         margin-bottom: var(--spacing-lg);
         padding-bottom: var(--spacing-sm);
         position: relative;
-        z-index: 0;
     }
 
-    /* Hide underline on all lines except the last using pseudo-element to mask underline area */
-    .work-index h2::before,
-    .work-content .work-index h2::before,
-    #work-content .work-index h2::before {
+    /* Add underline only on the last line using pseudo-element */
+    .work-index h2::after,
+    .work-content .work-index h2::after,
+    #work-content .work-index h2::after {
         content: '';
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
         right: 0;
-        bottom: calc(1.2em + 0.5em + 1px);
-        background: var(--color-bg);
-        pointer-events: none;
-        z-index: -1;
+        height: 1px;
+        background: currentColor;
+        margin-top: 0.5em;
     }
 
     .author-works {
@@ -1408,27 +1403,22 @@ body {
   padding-bottom: var(--spacing-sm);
   display: block;
   text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 0.5em;
-  text-decoration-skip-ink: none;
-  -webkit-text-decoration-skip-ink: none;
+  text-decoration: none;
   position: relative;
-  z-index: 0;
 }
 
-/* Hide underline on all lines except the last using pseudo-element to mask underline area */
-.work-index h2::before,
-.work-content .work-index h2::before,
-#work-content .work-index h2::before {
+/* Add underline only on the last line using pseudo-element */
+.work-index h2::after,
+.work-content .work-index h2::after,
+#work-content .work-index h2::after {
   content: '';
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: calc(1.2em + 0.5em + 1px);
-  background: var(--color-bg);
-  pointer-events: none;
-  z-index: -1;
+  height: 1px;
+  background: currentColor;
+  margin-top: 0.5em;
 }
 
 /* Remove bullet points from chapter list on index pages */
