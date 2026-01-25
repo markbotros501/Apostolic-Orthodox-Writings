@@ -771,6 +771,23 @@ footer {
         -webkit-text-decoration-skip-ink: none;
         margin-bottom: var(--spacing-lg);
         padding-bottom: var(--spacing-sm);
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Hide underline on all lines except the last - text needs to be above the mask */
+    .work-index h2::before,
+    .work-content .work-index h2::before,
+    #work-content .work-index h2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: calc(1.2em + 0.5em + 1px);
+        background: var(--color-bg);
+        pointer-events: none;
+        z-index: -1;
     }
 
     .author-works {
@@ -1395,6 +1412,28 @@ body {
   text-underline-offset: 0.5em;
   text-decoration-skip-ink: none;
   -webkit-text-decoration-skip-ink: none;
+  position: relative;
+}
+
+/* Hide underline on all lines except the last - text needs to be above the mask */
+.work-index h2,
+.work-content .work-index h2,
+#work-content .work-index h2 {
+  z-index: 1;
+}
+
+.work-index h2::before,
+.work-content .work-index h2::before,
+#work-content .work-index h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: calc(1.2em + 0.5em + 1px);
+  background: var(--color-bg);
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* Remove bullet points from chapter list on index pages */
