@@ -429,7 +429,7 @@ footer {
         position: relative;
         padding-left: 0;
         width: 100%;
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
     }
 
     .works-list li::before {
@@ -589,7 +589,7 @@ footer {
         list-style: none;
         position: relative;
         padding-left: 1em;
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
     }
 
     .works-list li::before {
@@ -864,7 +864,7 @@ footer {
     }
 
     .works-list li {
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
         list-style: none !important;
         margin-left: 0;
         text-align: left;
@@ -995,7 +995,7 @@ footer {
   list-style-position: outside;
   padding-left: 0;
   margin-left: 0;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
   text-align: left;
 }
 
@@ -1437,7 +1437,7 @@ body {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
 }
 
 .chapter-list li::marker,
