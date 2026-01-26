@@ -283,6 +283,7 @@ footer {
         margin-left: var(--spacing-xs);
         white-space: nowrap;
         flex-shrink: 0;
+        padding-right: 2px; /* Prevent "D" in "AD" from being cut off */
     }
 
     .author-profile {
@@ -725,6 +726,7 @@ footer {
         font-size: 0.75rem;
         white-space: nowrap;
         flex-shrink: 0;
+        padding-right: 2px; /* Prevent "D" in "AD" from being cut off */
     }
 
     .author-header {
