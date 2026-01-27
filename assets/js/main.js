@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial Render (only if fathersList exists)
     if (fathersList) {
-        // Filter only Cyril, Severus, and John Chrysostom
+        // Filter only Cyril, Severus, John Chrysostom, and John Cassian
         const filteredFathers = window.patristicDB.fathers.filter(father => 
-            father.id === 'cyril-alexandria' || father.id === 'severus-antioch' || father.id === 'john-chrysostom'
+            father.id === 'cyril-alexandria' || father.id === 'severus-antioch' || father.id === 'john-chrysostom' || father.id === 'john-cassian'
         );
         
         // Sort by dates (earlier first)
-        // Cyril: 376-444 AD, John Chrysostom: c. 349-407 AD, Severus: 465-538 AD
+        // John Chrysostom: c. 349-407 AD, John Cassian: c. 360-435 AD, Cyril: 376-444 AD, Severus: 465-538 AD
         filteredFathers.sort((a, b) => {
             const aYear = parseInt(a.dates.match(/\d+/)[0]);
             const bYear = parseInt(b.dates.match(/\d+/)[0]);
