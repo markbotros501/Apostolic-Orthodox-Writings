@@ -89,6 +89,20 @@ const db = {
                     path: "pages/fathers/john-chrysostom/Commentary on Job/index.html"
                 }
             ]
+        },
+        {
+            id: "john-cassian",
+            name: "John Cassian",
+            dates: "c. 360 – c. 435 AD",
+            bio: "Christian monk and theologian celebrated in both the Western and Eastern churches for his mystical writings. He is known for bringing the ideas and practices of Christian monasticism to the early medieval West.",
+            works: [
+                {
+                    id: "institutes",
+                    title: "The Institutes",
+                    type: "treatise",
+                    path: "pages/fathers/john-cassian/The Institutes/index.html"
+                }
+            ]
         }
     ]
 };
