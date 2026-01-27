@@ -93,7 +93,7 @@ const db = {
         {
             id: "john-cassian",
             name: "John Cassian",
-            dates: "c. 360 – c. 435 AD",
+            dates: "360 – 435 AD",
             bio: "Christian monk and theologian celebrated in both the Western and Eastern churches for his mystical writings. He is known for bringing the ideas and practices of Christian monasticism to the early medieval West.",
             works: [
                 {
