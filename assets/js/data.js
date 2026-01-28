@@ -83,16 +83,16 @@ const db = {
             bio: "Archbishop of Constantinople and an important Early Church Father. He is known for his eloquent preaching and public speaking, his denunciation of abuse of authority by both ecclesiastical and political leaders, and his Divine Liturgy of St. John Chrysostom.",
             works: [
                 {
-                    id: "commentary-on-job",
-                    title: "Commentary on Job",
-                    type: "commentary",
-                    path: "pages/fathers/john-chrysostom/Commentary on Job/index.html"
-                },
-                {
                     id: "on-the-egyptian-martyrs",
                     title: "On the Egyptian Martyrs",
                     type: "homily",
                     path: "pages/fathers/john-chrysostom/On the Egyptian Martyrs.html"
+                },
+                {
+                    id: "commentary-on-job",
+                    title: "Commentary on Job",
+                    type: "commentary",
+                    path: "pages/fathers/john-chrysostom/Commentary on Job/index.html"
                 }
             ]
         }
