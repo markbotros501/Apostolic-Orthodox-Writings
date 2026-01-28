@@ -1429,13 +1429,14 @@ body {
   background: currentColor;
 }
 
-/* Remove bullet points from chapter list on index pages */
+/* Chapter list: show bullet points (matching the red links) */
 .chapter-list,
 .work-index .chapter-list,
 .work-content .chapter-list,
 #work-content .chapter-list {
-  list-style: none;
-  padding-left: 0;
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 1.25rem;
   margin-left: 0;
   margin-top: var(--spacing-md);
 }
@@ -1444,7 +1445,7 @@ body {
 .work-index .chapter-list li,
 .work-content .chapter-list li,
 #work-content .chapter-list li {
-  list-style: none;
+  list-style: disc;
   margin-left: 0;
   padding-left: 0;
   margin-bottom: var(--spacing-xs);
@@ -1454,13 +1455,15 @@ body {
 .work-index .chapter-list li::marker,
 .work-content .chapter-list li::marker,
 #work-content .chapter-list li::marker {
-  display: none;
+  color: var(--color-secondary);
 }
 
+/* Disable any legacy pseudo-bullets */
 .chapter-list li::before,
 .work-index .chapter-list li::before,
 .work-content .chapter-list li::before,
 #work-content .chapter-list li::before {
+  content: none;
   display: none;
 }
 
