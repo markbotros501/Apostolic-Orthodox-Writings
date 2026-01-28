@@ -426,19 +426,21 @@ footer {
 
     .works-list li {
         margin-left: 0;
-        list-style: none !important;
+        list-style: disc !important;
+        list-style-position: outside;
         position: relative;
-        padding-left: 0;
+        padding-left: 1.25rem;
         width: 100%;
         margin-bottom: var(--spacing-xs);
     }
 
     .works-list li::before {
+        content: none !important;
         display: none !important;
     }
 
     .works-list li::marker {
-        display: none !important;
+        color: var(--color-secondary) !important;
     }
 
     .work-link {
@@ -586,18 +588,17 @@ footer {
     }
 
     .works-list li {
-        margin-left: 0.5em;
-        list-style: none;
+        margin-left: 0;
+        list-style: disc;
+        list-style-position: outside;
         position: relative;
-        padding-left: 1em;
+        padding-left: 1.25rem;
         margin-bottom: var(--spacing-xs);
     }
 
     .works-list li::before {
-        content: "•";
-        color: var(--color-secondary);
-        position: absolute;
-        left: 0;
+        content: none;
+        display: none;
     }
 
     .btn {
@@ -867,20 +868,22 @@ footer {
 
     .works-list li {
         margin-bottom: 0.125rem;
-        list-style: none !important;
+        list-style: disc !important;
+        list-style-position: outside;
         margin-left: 0;
         text-align: left;
         position: relative;
-        padding-left: 0;
+        padding-left: 1.25rem;
         width: 100%;
     }
 
     .works-list li::before {
+        content: none !important;
         display: none !important;
     }
 
     .works-list li::marker {
-        display: none !important;
+        color: var(--color-secondary) !important;
     }
 
     .work-link {
@@ -1001,7 +1004,7 @@ footer {
 }
 
 .works-list li {
-  list-style: none;
+  list-style: disc;
   list-style-position: outside;
   padding-left: 0;
   margin-left: 0;
@@ -1010,10 +1013,11 @@ footer {
 }
 
 .works-list li::marker {
-  display: none;
+  color: var(--color-secondary);
 }
 
 .works-list li::before {
+  content: none;
   display: none;
 }
 
