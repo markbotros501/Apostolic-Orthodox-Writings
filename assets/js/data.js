@@ -87,6 +87,12 @@ const db = {
                     title: "Commentary on Job",
                     type: "commentary",
                     path: "pages/fathers/john-chrysostom/Commentary on Job/index.html"
+                },
+                {
+                    id: "on-the-egyptian-martyrs",
+                    title: "On the Egyptian Martyrs",
+                    type: "homily",
+                    path: "pages/fathers/john-chrysostom/On the Egyptian Martyrs.html"
                 }
             ]
         }
