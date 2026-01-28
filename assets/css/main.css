@@ -426,21 +426,19 @@ footer {
 
     .works-list li {
         margin-left: 0;
-        list-style: disc !important;
-        list-style-position: outside;
+        list-style: none !important;
         position: relative;
-        padding-left: 1.25rem;
+        padding-left: 0;
         width: 100%;
         margin-bottom: var(--spacing-xs);
     }
 
     .works-list li::before {
-        content: none !important;
         display: none !important;
     }
 
     .works-list li::marker {
-        color: var(--color-secondary) !important;
+        display: none !important;
     }
 
     .work-link {
@@ -588,17 +586,18 @@ footer {
     }
 
     .works-list li {
-        margin-left: 0;
-        list-style: disc;
-        list-style-position: outside;
+        margin-left: 0.5em;
+        list-style: none;
         position: relative;
-        padding-left: 1.25rem;
+        padding-left: 1em;
         margin-bottom: var(--spacing-xs);
     }
 
     .works-list li::before {
-        content: none;
-        display: none;
+        content: "•";
+        color: var(--color-secondary);
+        position: absolute;
+        left: 0;
     }
 
     .btn {
@@ -868,22 +867,20 @@ footer {
 
     .works-list li {
         margin-bottom: 0.125rem;
-        list-style: disc !important;
-        list-style-position: outside;
+        list-style: none !important;
         margin-left: 0;
         text-align: left;
         position: relative;
-        padding-left: 1.25rem;
+        padding-left: 0;
         width: 100%;
     }
 
     .works-list li::before {
-        content: none !important;
         display: none !important;
     }
 
     .works-list li::marker {
-        color: var(--color-secondary) !important;
+        display: none !important;
     }
 
     .work-link {
@@ -1004,7 +1001,7 @@ footer {
 }
 
 .works-list li {
-  list-style: disc;
+  list-style: none;
   list-style-position: outside;
   padding-left: 0;
   margin-left: 0;
@@ -1013,11 +1010,10 @@ footer {
 }
 
 .works-list li::marker {
-  color: var(--color-secondary);
+  display: none;
 }
 
 .works-list li::before {
-  content: none;
   display: none;
 }
 
@@ -1433,14 +1429,13 @@ body {
   background: currentColor;
 }
 
-/* Chapter list: show bullet points (matching the red links) */
+/* Remove bullet points from chapter list on index pages */
 .chapter-list,
 .work-index .chapter-list,
 .work-content .chapter-list,
 #work-content .chapter-list {
-  list-style: disc;
-  list-style-position: outside;
-  padding-left: 1.25rem;
+  list-style: none;
+  padding-left: 0;
   margin-left: 0;
   margin-top: var(--spacing-md);
 }
@@ -1449,7 +1444,7 @@ body {
 .work-index .chapter-list li,
 .work-content .chapter-list li,
 #work-content .chapter-list li {
-  list-style: disc;
+  list-style: none;
   margin-left: 0;
   padding-left: 0;
   margin-bottom: var(--spacing-xs);
@@ -1459,15 +1454,13 @@ body {
 .work-index .chapter-list li::marker,
 .work-content .chapter-list li::marker,
 #work-content .chapter-list li::marker {
-  color: var(--color-secondary);
+  display: none;
 }
 
-/* Disable any legacy pseudo-bullets */
 .chapter-list li::before,
 .work-index .chapter-list li::before,
 .work-content .chapter-list li::before,
 #work-content .chapter-list li::before {
-  content: none;
   display: none;
 }
 
