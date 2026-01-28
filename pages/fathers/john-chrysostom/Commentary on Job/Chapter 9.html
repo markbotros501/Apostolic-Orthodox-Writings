@@ -26,16 +26,85 @@
             margin-bottom: 15px;
             text-align: justify;
         }
+        .scripture-ref {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .footnote {
+            font-size: 0.8em;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        .question {
+            font-weight: bold;
+            color: #c0392b;
+        }
+        sup a {
+            text-decoration: none;
+            color: #c0392b;
+            font-weight: bold;
+        }
+        .footnotes a {
+            color: #c0392b;
+            text-decoration: none;
+        }
+        .footnotes a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Highlight footnote references when returning to them */
+        .footnote-ref:target {
+            background-color: yellow;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .footnote-back {
+            margin-left: 10px;
+            font-size: 0.9em;
+        }
+        
+        .subheading {
+            text-align: center;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .verse-inline {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+        }
     </style>
 </head>
 <body>
     <h1>Chapter Nine</h1>
 
     <div class="section">
-        <p class="paragraph">
-            The text for Chapter 9 of St John Chrysostom's <i>Commentary on Job</i> will be added here.
-        </p>
+        <p class="paragraph"><span class="verse-inline"><i>“Then Job answered and said, I know of a truth that it is so.”</i><sup><a href="#fn1" id="ref1">1</a></sup></span></p>
+        <p class="paragraph">How full of philosophy are these words? I know, he says, that the impious perish, but the righteous do not. Do you see how he in no way accuses God of injustice?</p>
+        <p class="paragraph"><span class="verse-inline"><i>“Who does great and unsearchable things, glorious and marvelous, without number.”</i><sup><a href="#fn2" id="ref2">2</a></sup></span></p>
+        <p class="paragraph">Are these things which I have just spoken of, he says, not great, not unsearchable, even though they are visible? How much more so the invisible ones? But see, he speaks not of His essence anywhere, but of His energies. And what, he says, shall I say of each one of them? For great and incomprehensible and innumerable are the works of God.</p>
+        <p class="paragraph"><span class="verse-inline"><i>“Many are my bruises made without cause.”</i><sup><a href="#fn3" id="ref3">3</a></sup></span></p>
+        <p class="paragraph">This also God said concerning him to the devil: But you said, to destroy his possessions without cause. Why then are you amazed, if what God said, this man also says, that without cause, not that he sinned, but that nothing more will come from his punishment, and from his being chastised.</p>
+        <p class="paragraph"><span class="verse-inline"><i>“For if I wash myself with snow, and cleanse my hands with pure hands, sufficiently have you plunged me in filth, and my garment has abhorred me.”</i><sup><a href="#fn4" id="ref4">4</a></sup></span></p>
+        <p class="paragraph">Of Chrysostom and Olympiodorus. It was a custom among the ancients to cleanse defilements with washings; and this also was an ancient custom, where they wished to show that they had no part in a certain sin, they washed their hands, saying: I am innocent of this matter; as Pilate also did concerning the Savior; and David sang, I will wash my hands in innocence.<sup><a href="#fn5" id="ref5">5</a></sup> This, then, he says: However pure I may be, these exacting reproofs and the punishments imposed, from their preconception, show me to be defiled and unclean; so that even the one who touches my garments seems to be defiled, because each one supposes that I suffer these things on account of a multitude of sins. He says these things because his friends were using what befell him as proof that he was a sinner. What he says is of this kind: I am set as an example of impiety to all. Why then did I not die? For the wicked one ought to have been taken from the midst, so as not to be a teacher to others. If I become purer than the sun, I have a blemish, and not an ordinary one. But even those so near to me, as a garment is to the body, even they have hated me, not because of the punishment, but as one accursed and defiled, as unclean, thus they turned away from me. My body also has become abominable to me, for this is the garment. But it can also be understood in this way: <i>“My garment has abhorred me,”</i> meaning that even my clothing flees from me, as if hating me, instead of, I cannot even put it on, because I am excessively ulcerated.</p>
     </div>
+
+    <div class="footnotes">
+        <p id="fn1"><sup>1</sup> Job 9:1-2 <a href="#ref1" class="footnote-back">↑ Back to text</a></p>
+        <p id="fn2"><sup>2</sup> Job 9:10 <a href="#ref2" class="footnote-back">↑ Back to text</a></p>
+        <p id="fn3"><sup>3</sup> cf. Job 9:17 <a href="#ref3" class="footnote-back">↑ Back to text</a></p>
+        <p id="fn4"><sup>4</sup> Job 9:30-31 <a href="#ref4" class="footnote-back">↑ Back to text</a></p>
+        <p id="fn5"><sup>5</sup> Psalm 26:6 (25:6 LXX) <a href="#ref5" class="footnote-back">↑ Back to text</a></p>
+    </div>
+
+    <p style="text-align: center; margin-top: 2em; color: #7f8c8d; font-size: 0.9em; font-style: italic;">Source: <a href="https://archive.org/details/patrologiae_cursus_completus_gr_vol_064/page/n299/mode/1up" target="_blank" style="color: #c0392b; text-decoration: none;">Patrologia Graeca 64</a></p>
 </body>
 </html>
-
