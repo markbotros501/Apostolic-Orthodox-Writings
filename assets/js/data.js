@@ -46,12 +46,6 @@ const db = {
                     title: "Against the Propositions of Julian",
                     type: "treatise",
                     path: "pages/fathers/severus-antioch/Against the Propositions of Julian.html"
-                },
-                {
-                    id: "cathedral-homilies",
-                    title: "Cathedral Homilies",
-                    type: "homily",
-                    path: "pages/fathers/severus-antioch/Cathedral Homilies/index.html"
                 }
             ]
         },
