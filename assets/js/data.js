@@ -92,7 +92,7 @@ const db = {
                     id: "commentary-on-job",
                     title: "Commentary on Job",
                     type: "commentary",
-                    path: "pages/fathers/john-chrysostom/Commentary on Job/index.html"
+                    path: "pages/fathers/john-chrysostom/Commentary on Job.html"
                 }
             ]
         }
