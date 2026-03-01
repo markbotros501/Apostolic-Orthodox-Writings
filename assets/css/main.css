@@ -863,6 +863,7 @@ footer {
     
     .author-profile .works-list li {
         padding-left: 0 !important;
+        margin-bottom: 0;
     }
 
     /* Shrink work titles (e.g. On the Egyptian Martyrs, Commentary on Job) on author page on mobile only */
