@@ -1337,6 +1337,16 @@ body {
   margin-top: 0 !important;
 }
 
+/* Make red text (questions, footnote refs/links) smaller on works pages */
+.work-content .question,
+.work-content sup a,
+.work-content .footnotes a,
+#work-content .question,
+#work-content sup a,
+#work-content .footnotes a {
+  font-size: 0.85em;
+}
+
 /* Reduce spacing after paragraphs that contain footnote references */
 .work-content .paragraph {
   margin-bottom: var(--spacing-md);
