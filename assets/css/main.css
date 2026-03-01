@@ -1367,6 +1367,16 @@ body {
     font-size: 0.875rem !important;
   }
 
+  /* Make red text (questions, footnote refs/links) smaller on mobile only */
+  .work-content .question,
+  .work-content sup a,
+  .work-content .footnotes a,
+  #work-content .question,
+  #work-content sup a,
+  #work-content .footnotes a {
+    font-size: 0.75em;
+  }
+
   /* Ensure paragraphs maintain consistent line-height without expanding for superscript */
   .work-content p,
   .work-content .paragraph {
