@@ -872,6 +872,12 @@ footer {
         font-size: 0.875rem;
     }
 
+    /* On Adoration and Worship: shrink "Book 1" (chapter list) to same size on mobile */
+    .work-content .work-index .chapter-list a,
+    #work-content .work-index .chapter-list a {
+        font-size: 0.875rem;
+    }
+
     .works-list li {
         margin-bottom: 0.125rem;
         list-style: none !important;
