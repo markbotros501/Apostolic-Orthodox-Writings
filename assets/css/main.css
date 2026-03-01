@@ -865,6 +865,12 @@ footer {
         padding-left: 0 !important;
     }
 
+    /* Shrink work titles (e.g. On the Egyptian Martyrs, Commentary on Job) on author page on mobile only */
+    .author-profile .works-list .work-link,
+    .author-profile .works-list .work-title {
+        font-size: 0.875rem;
+    }
+
     .works-list li {
         margin-bottom: 0.125rem;
         list-style: none !important;
@@ -1335,16 +1341,6 @@ body {
 /* Remove spacing between footnotes in the footnotes section */
 .work-content .footnotes p + p {
   margin-top: 0 !important;
-}
-
-/* Make red text (questions, footnote refs/links) smaller on works pages */
-.work-content .question,
-.work-content sup a,
-.work-content .footnotes a,
-#work-content .question,
-#work-content sup a,
-#work-content .footnotes a {
-  font-size: 0.85em;
 }
 
 /* Reduce spacing after paragraphs that contain footnote references */
