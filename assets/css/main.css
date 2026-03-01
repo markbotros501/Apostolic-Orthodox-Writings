@@ -1337,16 +1337,6 @@ body {
   margin-top: 0 !important;
 }
 
-/* Make red text (questions, footnote refs/links) smaller on works pages */
-.work-content .question,
-.work-content sup a,
-.work-content .footnotes a,
-#work-content .question,
-#work-content sup a,
-#work-content .footnotes a {
-  font-size: 0.85em;
-}
-
 /* Reduce spacing after paragraphs that contain footnote references */
 .work-content .paragraph {
   margin-bottom: var(--spacing-md);
@@ -1365,16 +1355,6 @@ body {
   .work-content,
   #work-content {
     font-size: 0.875rem !important;
-  }
-
-  /* Make red text (questions, footnote refs/links) smaller on mobile only */
-  .work-content .question,
-  .work-content sup a,
-  .work-content .footnotes a,
-  #work-content .question,
-  #work-content sup a,
-  #work-content .footnotes a {
-    font-size: 0.75em;
   }
 
   /* Ensure paragraphs maintain consistent line-height without expanding for superscript */
