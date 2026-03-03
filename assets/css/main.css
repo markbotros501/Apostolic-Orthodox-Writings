@@ -446,6 +446,17 @@ footer {
         vertical-align: baseline;
     }
 
+    /* Home page: red work titles – align with father name, smaller, tighter */
+    .card-works .works-list {
+        padding-left: 0;
+    }
+    .card-works .works-list li {
+        margin-bottom: 0.0625rem;
+    }
+    .card-works .work-link {
+        font-size: 0.7rem;
+    }
+
     .work-link {
         display: block;
         padding: 0;
@@ -764,6 +775,17 @@ footer {
         white-space: nowrap;
         flex-shrink: 0;
         padding-right: 2px; /* Prevent "D" in "AD" from being cut off */
+    }
+
+    /* Home page: red work titles – align with father name, smaller, tighter */
+    .card-works .works-list {
+        padding-left: 0;
+    }
+    .card-works .works-list li {
+        margin-bottom: 0.0625rem;
+    }
+    .card-works .work-link {
+        font-size: 0.75rem;
     }
 
     .author-header {
