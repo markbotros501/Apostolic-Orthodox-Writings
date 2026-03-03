@@ -305,8 +305,9 @@ footer {
         min-width: 0;
     }
 
-    .card .dates {
-        font-size: 0.6rem;
+    .card .dates,
+    .card-with-works .card-header .dates {
+        font-size: 0.6rem !important;
         margin-left: var(--spacing-xs);
         white-space: nowrap;
         flex-shrink: 0;
@@ -533,6 +534,11 @@ footer {
         padding: var(--spacing-lg);
     }
 
+    .card .dates,
+    .card-with-works .card-header .dates {
+        font-size: 0.65rem !important;
+    }
+
     .author-profile {
         padding: 0.625rem var(--spacing-md);
         background-color: white;
@@ -747,10 +753,11 @@ footer {
         min-width: 0;
     }
 
-    .card .dates {
+    .card .dates,
+    .card-with-works .card-header .dates {
         margin-left: var(--spacing-xs);
         margin-top: 0;
-        font-size: 0.65rem;
+        font-size: 0.65rem !important;
         white-space: nowrap;
         flex-shrink: 0;
         padding-right: 2px; /* Prevent "D" in "AD" from being cut off */
