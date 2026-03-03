@@ -451,7 +451,7 @@ footer {
         padding-left: 0;
     }
     .card-works .works-list li {
-        margin-bottom: 0.0625rem;
+        margin-bottom: 0;
     }
     .card-works .work-link {
         font-size: 0.7rem;
@@ -782,7 +782,7 @@ footer {
         padding-left: 0;
     }
     .card-works .works-list li {
-        margin-bottom: 0.0625rem;
+        margin-bottom: 0;
     }
     .card-works .work-link {
         font-size: 0.75rem;
