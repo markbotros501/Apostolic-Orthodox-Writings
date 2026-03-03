@@ -450,6 +450,8 @@ footer {
         display: block;
         padding: 0;
         width: 100%;
+        font-family: var(--font-serif);
+        font-size: 0.75rem;
     }
 
     .works-list li {
@@ -473,8 +475,8 @@ footer {
         display: block;
         width: 100%;
         font-weight: 400;
-        font-family: var(--font-sans);
-        font-size: var(--font-size-sm);
+        font-family: var(--font-serif);
+        font-size: 0.8rem;
         color: var(--color-secondary);
     }
 
@@ -591,7 +593,8 @@ footer {
         padding: 0;
         width: 100%;
         font-weight: 400;
-        font-family: var(--font-sans);
+        font-family: var(--font-serif);
+        font-size: 0.8rem;
         color: var(--color-secondary);
     }
 
@@ -934,8 +937,8 @@ footer {
         display: block;
         width: 100%;
         font-weight: 400;
-        font-family: var(--font-sans);
-        font-size: var(--font-size-sm);
+        font-family: var(--font-serif);
+        font-size: 0.8rem;
         color: var(--color-secondary);
     }
 
@@ -1069,7 +1072,7 @@ footer {
   width: 100%;
   text-decoration: none;
   font-weight: 400;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: var(--font-size-base);
   color: var(--color-secondary);
   transition: color 0.2s ease;
