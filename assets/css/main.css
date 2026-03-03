@@ -184,6 +184,43 @@ nav ul {
     line-height: 1.6;
 }
 
+/* Home page: card with works list (no whole-card click) */
+.card-with-works {
+    cursor: default;
+}
+
+.card-with-works:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
+    border-color: var(--color-border);
+}
+
+.card-author-link {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.card-author-link:hover {
+    text-decoration: underline;
+    color: var(--color-secondary);
+}
+
+.card-works {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.card-works .works-list {
+    margin: 0;
+    padding-left: var(--spacing-md);
+}
+
+.card-works .no-works {
+    color: var(--color-text-light);
+    font-style: italic;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
