@@ -195,16 +195,6 @@ nav ul {
     border-color: var(--color-border);
 }
 
-.card-author-link {
-    color: var(--color-primary);
-    text-decoration: none;
-}
-
-.card-author-link:hover {
-    text-decoration: underline;
-    color: var(--color-secondary);
-}
-
 .card-works {
     margin-top: var(--spacing-md);
     padding-top: var(--spacing-md);

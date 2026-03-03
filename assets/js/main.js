@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const nameDateRow = document.createElement('div');
             nameDateRow.className = 'card-header';
             nameDateRow.innerHTML = `
-        <h3><a href="author.html?id=${father.id}" class="card-author-link">Saint ${father.name}</a></h3>
+        <h3>Saint ${father.name}</h3>
         <p class="dates">${father.dates}</p>
       `;
 
