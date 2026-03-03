@@ -59,8 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadWorkContent() {
         // Update Metadata
     document.title = `${foundWork.title} - Apostolic Orthodox Writings`;
-    document.getElementById('breadcrumb-father').textContent = foundFather.name;
-    document.getElementById('breadcrumb-father').href = `author.html?id=${foundFather.id}`;
     document.getElementById('breadcrumb-work').textContent = foundWork.title;
 
     document.getElementById('work-title').textContent = foundWork.title;
