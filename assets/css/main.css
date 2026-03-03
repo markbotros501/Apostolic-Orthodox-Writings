@@ -306,7 +306,7 @@ footer {
     }
 
     .card .dates {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         margin-left: var(--spacing-xs);
         white-space: nowrap;
         flex-shrink: 0;
@@ -750,7 +750,7 @@ footer {
     .card .dates {
         margin-left: var(--spacing-xs);
         margin-top: 0;
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         white-space: nowrap;
         flex-shrink: 0;
         padding-right: 2px; /* Prevent "D" in "AD" from being cut off */
