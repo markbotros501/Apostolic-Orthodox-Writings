@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
     background-color: var(--color-bg);
     color: var(--color-text);
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -398,7 +398,7 @@ footer {
 
     .breadcrumbs {
         font-size: 0.7rem;
-        font-family: var(--font-sans);
+        font-family: var(--font-serif);
         margin-bottom: 0;
         padding: 0 var(--spacing-sm);
         line-height: 1.4;
@@ -437,7 +437,7 @@ footer {
     
     .breadcrumbs a,
     .breadcrumbs li[aria-current="page"] {
-        font-family: var(--font-sans);
+        font-family: var(--font-serif);
         display: inline;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -688,7 +688,7 @@ footer {
     
     .breadcrumbs {
         font-size: 0.75rem;
-        font-family: var(--font-sans);
+        font-family: var(--font-serif);
         line-height: 1.4;
         margin-bottom: 0;
     }
@@ -726,7 +726,7 @@ footer {
     
     .breadcrumbs a,
     .breadcrumbs li[aria-current="page"] {
-        font-family: var(--font-sans);
+        font-family: var(--font-serif);
         display: inline;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -1117,7 +1117,7 @@ footer {
 .breadcrumbs {
   margin-bottom: var(--spacing-sm);
   font-size: 0.75rem;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   line-height: 1.5;
   overflow: hidden;
 }
@@ -1165,7 +1165,7 @@ body:has(.work-container) .breadcrumbs {
 
 .breadcrumbs a {
   color: var(--color-text-light);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   display: inline;
   line-height: 1.5;
   vertical-align: baseline;
@@ -1177,7 +1177,7 @@ body:has(.work-container) .breadcrumbs {
 
 .breadcrumbs li[aria-current="page"] {
   color: var(--color-text);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-weight: 500;
   display: inline;
   line-height: 1.5;
@@ -1446,7 +1446,7 @@ body {
 .work-content h2, .work-content h3 {
   margin-top: var(--spacing-lg);
   margin-bottom: var(--spacing-md);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   color: var(--color-primary);
 }
 
@@ -1520,7 +1520,7 @@ body {
 .work-content .chapter-list a,
 #work-content .chapter-list a {
   font-weight: 400;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: var(--font-size-base);
   color: var(--color-secondary);
   text-decoration: none;
