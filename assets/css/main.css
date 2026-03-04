@@ -274,22 +274,6 @@ footer {
         padding: 0 var(--spacing-sm) !important;
     }
 
-    /* Work pages: push content to edge of screen on mobile */
-    body:has(.work-container) main.container {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    body:has(.work-container) .work-content {
-        padding-left: var(--spacing-sm) !important;
-        padding-right: var(--spacing-sm) !important;
-    }
-
-    body:has(.work-container) .breadcrumbs {
-        padding-left: var(--spacing-sm) !important;
-        padding-right: var(--spacing-sm) !important;
-    }
-
     header .container {
         padding: var(--spacing-xs) var(--spacing-sm);
         flex-wrap: nowrap;
@@ -717,22 +701,7 @@ footer {
 
 /* General Mobile Improvements (all mobile sizes) */
 @media (max-width: 768px) {
-    /* Work pages: push content to edge of screen on mobile */
-    body:has(.work-container) main.container {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    body:has(.work-container) .work-content {
-        padding-left: var(--spacing-sm) !important;
-        padding-right: var(--spacing-sm) !important;
-    }
-
-    body:has(.work-container) .breadcrumbs {
-        padding-left: var(--spacing-sm) !important;
-        padding-right: var(--spacing-sm) !important;
-    }
-
+    
     header .container {
         justify-content: center;
         position: relative;
