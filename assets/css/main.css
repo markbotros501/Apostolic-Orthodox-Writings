@@ -1530,7 +1530,8 @@ body {
 #work-content .chapter-list li {
   list-style: none;
   margin-left: 0;
-  padding-left: 0;
+  padding-left: 1.25em;
+  position: relative;
   margin-bottom: var(--spacing-xs);
 }
 
@@ -1545,7 +1546,11 @@ body {
 .work-index .chapter-list li::before,
 .work-content .chapter-list li::before,
 #work-content .chapter-list li::before {
-  display: none;
+  content: "+";
+  color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
 }
 
 /* Format chapter list links to match work titles */
