@@ -472,7 +472,7 @@ footer {
         margin-left: 0;
         list-style: none !important;
         position: relative;
-        padding-left: 1.25em;
+        padding-left: 1.5em;
         width: 100%;
         margin-bottom: var(--spacing-xs);
     }
@@ -506,6 +506,14 @@ footer {
         display: block;
         width: 100%;
         white-space: nowrap;
+    }
+
+    /* Chapter list: ensure plus doesn't overlap (override .work-content li padding-left: 0) */
+    .chapter-list li,
+    .work-index .chapter-list li,
+    .work-content .chapter-list li,
+    #work-content .chapter-list li {
+        padding-left: 1.5em !important;
     }
 
     /* Format chapter list links to match work titles on mobile */
@@ -1410,6 +1418,14 @@ body {
     margin-right: 0 !important;
     max-width: 100% !important;
     width: 100% !important;
+  }
+
+  /* Keep space for plus on chapter list (e.g. Book 1 under On Adoration) */
+  .work-content .chapter-list li,
+  .work-content .work-index .chapter-list li,
+  #work-content .chapter-list li,
+  #work-content .work-index .chapter-list li {
+    padding-left: 1.5em !important;
   }
 }
 
