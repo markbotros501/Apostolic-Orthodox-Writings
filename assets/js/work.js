@@ -1,3 +1,10 @@
+// Strip body/html rules from injected work HTML so they don't affect the page (no top gap)
+function stripDocumentStylesFromCss(css) {
+    return (css || '')
+        .replace(/\bbody\s*\{[^}]*\}/gi, '')
+        .replace(/\bhtml\s*\{[^}]*\}/gi, '');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
     const workId = params.get('id');
@@ -88,11 +95,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
 
-            // Extract style tags from head to preserve original formatting
+            // Extract style tags from head; strip body/html rules so they don't affect the page
             const styleTags = doc.querySelectorAll('head style');
             let stylesHTML = '';
             styleTags.forEach(style => {
-                stylesHTML += style.outerHTML;
+                const cleaned = document.createElement('style');
+                cleaned.textContent = stripDocumentStylesFromCss(style.textContent || '');
+                stylesHTML += cleaned.outerHTML;
             });
 
             // Get the body content
@@ -156,11 +165,13 @@ window.loadWorkPart = function (path) {
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, 'text/html');
 
-            // Extract style tags from head to preserve original formatting
+            // Extract style tags from head; strip body/html rules so they don't affect the page
             const styleTags = doc.querySelectorAll('head style');
             let stylesHTML = '';
             styleTags.forEach(style => {
-                stylesHTML += style.outerHTML;
+                const cleaned = document.createElement('style');
+                cleaned.textContent = stripDocumentStylesFromCss(style.textContent || '');
+                stylesHTML += cleaned.outerHTML;
             });
 
             // Get the body content

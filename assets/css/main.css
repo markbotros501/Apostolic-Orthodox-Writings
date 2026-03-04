@@ -27,6 +27,12 @@ body {
     word-break: normal;
 }
 
+/* Eliminate any gap above header (banner) */
+body > header:first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 h1,
 h2,
 h3,
@@ -71,10 +77,11 @@ main.container {
 
 /* Header */
 header {
+    margin: 0;
+    margin-bottom: var(--spacing-md);
+    padding: 0;
     background-color: var(--color-bg-alt);
     border-bottom: 1px solid var(--color-border);
-    padding: 0;
-    margin-bottom: var(--spacing-md);
 }
 
 header .container {
@@ -341,7 +348,7 @@ footer {
     }
     
     .author-profile .works-list li {
-        padding-left: 0 !important;
+        padding-left: 1.25em !important;
     }
 
     .work-container {
@@ -466,13 +473,17 @@ footer {
         margin-left: 0;
         list-style: none !important;
         position: relative;
-        padding-left: 0;
+        padding-left: 1.25em;
         width: 100%;
         margin-bottom: var(--spacing-xs);
     }
 
     .works-list li::before {
-        display: none !important;
+        content: "+" !important;
+        color: var(--color-secondary);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
     }
 
     .works-list li::marker {
@@ -560,7 +571,7 @@ footer {
     }
     
     .author-profile .works-list li {
-        padding-left: 0 !important;
+        padding-left: 1.25em !important;
     }
 
     .work-container {
@@ -632,9 +643,10 @@ footer {
     }
 
     .works-list li::before {
-        content: "•";
+        content: "+";
         color: var(--color-secondary);
         position: absolute;
+        font-weight: bold;
         left: 0;
     }
 
@@ -934,12 +946,16 @@ footer {
         margin-left: 0;
         text-align: left;
         position: relative;
-        padding-left: 0;
+        padding-left: 1.25em;
         width: 100%;
     }
 
     .works-list li::before {
-        display: none !important;
+        content: "+" !important;
+        color: var(--color-secondary);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
     }
 
     .works-list li::marker {
@@ -1066,7 +1082,8 @@ footer {
 .works-list li {
   list-style: none;
   list-style-position: outside;
-  padding-left: 0;
+  position: relative;
+  padding-left: 1.25em;
   margin-left: 0;
   margin-bottom: var(--spacing-xs);
   text-align: left;
@@ -1077,7 +1094,11 @@ footer {
 }
 
 .works-list li::before {
-  display: none;
+  content: "+";
+  color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
 }
 
 .work-link {
@@ -1321,9 +1342,9 @@ html body {
   max-width: 100% !important;
 }
 
-/* Only override body padding on work pages (work.html has work-container) */
-/* The index page doesn't set body padding, so this is safe */
+/* Override body padding so injected work-HTML styles (e.g. body { padding: 20px }) don't add gap at top */
 body {
+  padding-top: 0 !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
