@@ -126,12 +126,12 @@ nav ul {
 
 /* Cards */
 .card {
-    background-color: white;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
     padding: var(--spacing-lg);
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: none;
+    transition: transform 0.2s ease;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -150,16 +150,13 @@ nav ul {
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--color-primary-light);
+    transform: none;
 }
 
 /* Touch-friendly card interaction on mobile */
 @media (hover: none) and (pointer: coarse) {
     .card:active {
-        transform: translateY(-2px);
-        box-shadow: var(--shadow-md);
+        transform: none;
     }
 }
 
@@ -191,14 +188,12 @@ nav ul {
 
 .card-with-works:hover {
     transform: none;
-    box-shadow: var(--shadow-sm);
-    border-color: var(--color-border);
 }
 
 .card-works {
     margin-top: var(--spacing-md);
     padding-top: var(--spacing-md);
-    border-top: 1px solid var(--color-border);
+    border-top: none;
 }
 
 .card-works .works-list {
@@ -316,10 +311,6 @@ footer {
 
     .author-profile {
         padding: 0.625rem var(--spacing-md);
-        background-color: white;
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-md);
-        box-shadow: var(--shadow-sm);
     }
 
     .author-header {
@@ -348,8 +339,6 @@ footer {
     .work-container {
         padding: 0.625rem 0 !important;
         margin: 0 auto !important;
-        border-radius: var(--radius-md) !important;
-        border: 1px solid var(--color-border) !important;
         max-width: 100% !important;
         width: 100% !important;
     }
@@ -554,12 +543,8 @@ footer {
 
     .author-profile {
         padding: 0.625rem var(--spacing-md);
-        background-color: white;
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-md);
-        box-shadow: var(--shadow-sm);
     }
-    
+
     /* Move works list further to the left to match chapter-list positioning */
     .author-profile .works-list {
         margin-left: calc(-1 * var(--spacing-lg) - var(--spacing-md)) !important;
@@ -573,8 +558,6 @@ footer {
     .work-container {
         padding: var(--spacing-lg) 0 !important;
         margin: 0 auto !important;
-        border-radius: var(--radius-md) !important;
-        border: 1px solid var(--color-border) !important;
         max-width: 100% !important;
         width: 100% !important;
     }
@@ -1011,11 +994,11 @@ footer {
 }
 /* Author Profile */
 .author-profile {
-  background-color: white;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
   padding: var(--spacing-lg);
-  box-shadow: var(--shadow-sm);
+  box-shadow: none;
 }
 
 .author-header {
@@ -1212,11 +1195,11 @@ body:has(.work-container) .breadcrumbs {
 
 /* Work Display */
 .work-container {
-  background-color: white;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
   padding: var(--spacing-lg);
-  box-shadow: var(--shadow-sm);
+  box-shadow: none;
   width: 100%;
   margin: 0 auto;
 }
@@ -1644,8 +1627,6 @@ body.dark-mode {
 body.dark-mode .card,
 body.dark-mode .author-profile,
 body.dark-mode .work-container {
-    background-color: #242424;
-    border-color: #404040;
     color: #e0e0e0;
 }
 
