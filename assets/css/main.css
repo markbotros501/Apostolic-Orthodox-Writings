@@ -116,7 +116,7 @@ footer .coptic-banner {
 
 .logo {
     font-family: var(--font-serif);
-    font-size: 2.25rem;
+    font-size: var(--font-size-xl);
     font-weight: bold;
     color: var(--color-primary);
     text-decoration: none;
@@ -282,7 +282,7 @@ footer {
     }
 
     .logo {
-        font-size: 1.25rem;
+        font-size: var(--font-size-base);
         line-height: 1.2;
         word-break: normal;
         overflow-wrap: normal;
@@ -394,7 +394,7 @@ footer {
     .work-index h2,
     .work-content .work-index h2,
     #work-content .work-index h2 {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-xl);
         word-wrap: normal;
         overflow-wrap: normal;
     }
@@ -547,7 +547,7 @@ footer {
     }
 
     .logo {
-        font-size: 1.5rem;
+        font-size: var(--font-size-xl);
     }
 
     .card {
@@ -825,7 +825,7 @@ footer {
     .work-index h2,
     .work-content .work-index h2,
     #work-content .work-index h2 {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-xl);
         word-wrap: normal;
         overflow-wrap: normal;
         text-decoration: none;
@@ -1047,7 +1047,7 @@ footer {
 
 .author-works h2 {
   font-family: var(--font-serif);
-  font-size: 2rem;
+  font-size: var(--font-size-xl);
   font-weight: 700;
   margin-top: 0;
   margin-bottom: var(--spacing-md);
@@ -1326,6 +1326,7 @@ body.dark-mode .breadcrumb-back-button .btn-back-to-index:hover {
 .work-content h1,
 #work-content h1 {
   font-family: var(--font-serif) !important;
+  font-size: var(--font-size-xl) !important;
   font-weight: 700 !important;
   text-align: center !important;
 }
