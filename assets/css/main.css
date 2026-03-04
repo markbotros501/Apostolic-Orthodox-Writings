@@ -634,10 +634,10 @@ footer {
     }
 
     .works-list li {
-        margin-left: 0.5em;
+        margin-left: 0;
         list-style: none;
         position: relative;
-        padding-left: 1em;
+        padding-left: 1.25em;
         margin-bottom: var(--spacing-xs);
     }
 
@@ -923,7 +923,7 @@ footer {
     }
     
     .author-profile .works-list li {
-        padding-left: 0 !important;
+        padding-left: 1.25em !important;
         margin-bottom: 0;
     }
 
@@ -998,7 +998,20 @@ footer {
     .work-index .chapter-list li,
     .work-content .chapter-list li,
     #work-content .chapter-list li {
+        padding-left: 1.25em;
+        position: relative;
         margin-bottom: 0.125rem;
+    }
+
+    .chapter-list li::before,
+    .work-index .chapter-list li::before,
+    .work-content .chapter-list li::before,
+    #work-content .chapter-list li::before {
+        content: "+";
+        color: var(--color-secondary);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
     }
 
     /* Ensure images are responsive */
