@@ -47,8 +47,3 @@
     --radius-md: 0.5rem;
     --radius-lg: 1rem;
 }
-
-/* Dark Mode Support (Class-based only) */
-/* Dark mode variables are now handled in main.css via body.dark-mode override, 
-   or we can move them here under body.dark-mode if we want to keep variables together.
-   For now, removing the media query ensures it doesn't auto-trigger. */

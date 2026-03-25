@@ -292,15 +292,6 @@ footer {
         overflow-wrap: normal;
     }
 
-    #theme-toggle {
-        font-size: 1.1rem;
-        min-width: 2rem;
-        min-height: 2rem;
-        padding: var(--spacing-xs);
-        position: absolute;
-        right: var(--spacing-sm);
-    }
-
     .card {
         padding: 0.625rem var(--spacing-md);
     }
@@ -1296,10 +1287,6 @@ body:has(.work-container) .breadcrumbs {
   border-radius: var(--radius-sm);
 }
 
-body.dark-mode .work-pdf-iframe {
-  border-color: #444;
-}
-
 /* Back to Index button styling in breadcrumb - smaller across all platforms */
 .breadcrumb-back-button {
   display: inline-flex;
@@ -1358,19 +1345,6 @@ body.dark-mode .work-pdf-iframe {
     width: 100%;
     text-align: center;
   }
-}
-
-/* Dark mode styling for back button in breadcrumb */
-body.dark-mode .breadcrumb-back-button .btn-back-to-index {
-  background-color: transparent;
-  color: var(--color-secondary);
-  border-color: var(--color-secondary);
-}
-
-body.dark-mode .breadcrumb-back-button .btn-back-to-index:hover {
-  background-color: #e74c3c;
-  border-color: #e74c3c;
-  color: white;
 }
 
 .work-content h1,
@@ -1661,156 +1635,6 @@ body {
 .header-search input:focus {
   outline: none;
   border-color: var(--color-primary);
-}
-
-/* Theme Toggle Button */
-#theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  transition: transform 0.2s ease, opacity 0.2s ease;
-  opacity: 0.8;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 2.5rem;
-  min-height: 2.5rem;
-  border-radius: var(--radius-sm);
-  /* Better touch interaction */
-  touch-action: manipulation;
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-tap-highlight-color: transparent;
-  position: absolute;
-  right: var(--spacing-md);
-}
-
-#theme-toggle:hover {
-  transform: scale(1.1);
-  opacity: 1;
-}
-
-#theme-toggle:active {
-  transform: scale(0.95);
-  opacity: 1;
-}
-
-/* Dark Mode Overrides */
-body.dark-mode {
-  background-color: var(--color-bg); /* Uses dark mode var from variables.css media query if supported, but we need manual override class */
-  color: var(--color-text);
-}
-
-/* We need to manually redefine variables for the .dark-mode class because the media query in variables.css only triggers on system preference, not class toggle */
-body.dark-mode {
-  --color-bg: #1a1a1a;
-  --color-bg-alt: #2a2a2a;
-  --color-text: #e0e0e0;
-  --color-text-light: #a0a0a0;
-  --color-border: #404040;
-  --color-primary: #ecf0f1;
-  --color-primary-light: #bdc3c7;
-  --color-secondary: #e74c3c;
-}
-
-body.dark-mode .card,
-body.dark-mode .author-profile,
-body.dark-mode .work-container {
-    color: #e0e0e0;
-}
-
-body.dark-mode .card-header {
-    border-bottom-color: #404040;
-}
-
-body.dark-mode .work-link {
-  color: var(--color-secondary);
-}
-
-body.dark-mode .work-link:hover {
-  color: var(--color-primary);
-}
-
-body.dark-mode .work-title {
-  color: var(--color-secondary);
-}
-
-body.dark-mode .chapter-list a,
-body.dark-mode .work-index .chapter-list a,
-body.dark-mode .work-content .chapter-list a,
-body.dark-mode #work-content .chapter-list a {
-  color: var(--color-secondary);
-}
-
-body.dark-mode .chapter-list a:hover,
-body.dark-mode .work-index .chapter-list a:hover,
-body.dark-mode .work-content .chapter-list a:hover,
-body.dark-mode #work-content .chapter-list a:hover {
-  color: var(--color-primary);
-}
-
-body.dark-mode .works-list li::marker {
-  color: var(--color-secondary);
-}
-
-/* Dark mode button styles - make back button more visible */
-body.dark-mode .btn {
-  background-color: #e74c3c;
-  color: white;
-  border: 2px solid #e74c3c;
-  font-weight: 600;
-}
-
-body.dark-mode .btn:hover {
-  background-color: #c0392b;
-  border-color: #c0392b;
-  color: white;
-}
-
-/* Dark mode for uploaded HTML content */
-body.dark-mode .work-content {
-  color: #e0e0e0;
-}
-
-/* Top title (work-header) should be red in dark mode */
-body.dark-mode .work-header h1 {
-  color: #e74c3c;
-}
-
-/* Bottom title (work-content h1 from uploaded HTML) should stay white in dark mode */
-body.dark-mode .work-content h1,
-body.dark-mode #work-content h1 {
-  color: #ecf0f1 !important;
-  border-bottom-color: #404040;
-  text-align: center !important;
-}
-
-body.dark-mode .work-content .scripture-ref {
-  color: #a0a0a0;
-}
-
-body.dark-mode .work-content .footnote {
-  color: #a0a0a0;
-}
-
-body.dark-mode .work-content .question {
-  color: #e74c3c;
-}
-
-body.dark-mode .work-content sup a {
-  color: #e74c3c;
-}
-
-body.dark-mode .work-content .footnotes a {
-  color: #e74c3c;
-}
-
-/* Dark mode for source note */
-body.dark-mode .work-content .source-note {
-  color: #a0a0a0 !important;
 }
 
 /* Additional Mobile Optimizations */
