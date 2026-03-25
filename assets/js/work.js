@@ -81,6 +81,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const workPath = encodedParts.join('/');
     console.log('Fetching work from:', workPath);
     console.log('Original path:', rawPath);
+
+    if (/\.pdf$/i.test(rawPath)) {
+        const container = document.createElement('div');
+        container.className = 'work-pdf-viewer';
+        const p = document.createElement('p');
+        p.className = 'work-pdf-fallback';
+        const a = document.createElement('a');
+        a.href = workPath;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = 'Open PDF in new tab';
+        p.appendChild(a);
+        const iframe = document.createElement('iframe');
+        iframe.className = 'work-pdf-iframe';
+        iframe.title = foundWork.title;
+        iframe.src = workPath;
+        container.appendChild(p);
+        container.appendChild(iframe);
+        const workContent = document.getElementById('work-content');
+        workContent.innerHTML = '';
+        workContent.appendChild(container);
+        return;
+    }
     
     fetch(workPath)
         .then(response => {

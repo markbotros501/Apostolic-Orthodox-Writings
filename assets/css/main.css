@@ -1275,6 +1275,31 @@ body:has(.work-container) .breadcrumbs {
   margin-top: 0;
 }
 
+.work-pdf-viewer {
+  width: 100%;
+}
+
+.work-pdf-fallback {
+  margin-bottom: var(--spacing-sm);
+  text-align: center;
+}
+
+.work-pdf-fallback a {
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+.work-pdf-iframe {
+  width: 100%;
+  min-height: 85vh;
+  border: 1px solid #bdc3c7;
+  border-radius: var(--radius-sm);
+}
+
+body.dark-mode .work-pdf-iframe {
+  border-color: #444;
+}
+
 /* Back to Index button styling in breadcrumb - smaller across all platforms */
 .breadcrumb-back-button {
   display: inline-flex;

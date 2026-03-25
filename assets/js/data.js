@@ -87,6 +87,12 @@ const db = {
                     title: "Commentary on Job",
                     type: "commentary",
                     path: "pages/fathers/john-chrysostom/Commentary on Job.html"
+                },
+                {
+                    id: "homilies-on-anna",
+                    title: "Homilies on Anna (Hannah)",
+                    type: "homily",
+                    path: "pages/fathers/john-chrysostom/St John Chrysostom Homilies on Anna.pdf"
                 }
             ]
         }
