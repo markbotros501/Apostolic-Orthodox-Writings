@@ -90,9 +90,9 @@ const db = {
                 },
                 {
                     id: "homilies-on-anna",
-                    title: "Homilies on Anna (Hannah)",
+                    title: "Homilies on Anna",
                     type: "homily",
-                    path: "pages/fathers/john-chrysostom/St John Chrysostom Homilies on Anna.pdf"
+                    path: "pages/fathers/john-chrysostom/Homilies on Anna.pdf"
                 }
             ]
         }

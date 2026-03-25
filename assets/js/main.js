@@ -60,7 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (works && works.length > 0) {
                 works.forEach(work => {
                     const li = document.createElement('li');
-                    li.innerHTML = `<a href="work.html?id=${work.id}" class="work-link"><span class="work-title">${work.title}</span></a>`;
+                    const isPdf = work.path && /\.pdf$/i.test(work.path);
+                    const href = isPdf
+                        ? work.path.split('/').map(part => encodeURIComponent(part)).join('/')
+                        : `work.html?id=${work.id}`;
+                    const newTabAttrs = isPdf ? ' target="_blank" rel="noopener"' : '';
+                    li.innerHTML = `<a href="${href}" class="work-link"${newTabAttrs}><span class="work-title">${work.title}</span></a>`;
                     worksList.appendChild(li);
                 });
             } else {
