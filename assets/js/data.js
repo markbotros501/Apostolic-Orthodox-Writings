@@ -26,6 +26,12 @@ const db = {
                     title: "On Adoration and Worship",
                     type: "treatise",
                     path: "pages/fathers/cyril-alexandria/works/index.html"
+                },
+                {
+                    id: "letters-pulcheria-eudoxia",
+                    title: "Letters to Pulcheria and Eudoxia",
+                    type: "epistle",
+                    path: "pages/fathers/cyril-alexandria/St Cyril to Pulcheria and Eudoxia.pdf"
                 }
             ]
         },
