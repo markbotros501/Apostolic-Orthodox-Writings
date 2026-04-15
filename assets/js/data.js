@@ -29,8 +29,8 @@ const db = {
                 },
                 {
                     id: "letters-pulcheria-eudoxia",
-                    title: "Letters to Pulcheria and Eudoxia",
-                    type: "epistle",
+                    title: "Oration to Pulcheria and Eudoxia",
+                    type: "oration",
                     path: "pages/fathers/cyril-alexandria/St Cyril to Pulcheria and Eudoxia.pdf"
                 }
             ]
