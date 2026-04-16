@@ -24,3 +24,7 @@ desktop.ini
 # Vercel
 .vercel
 
+# Patristic PDF tool: local sources and generated HTML
+input/*.pdf
+output/translated/
+

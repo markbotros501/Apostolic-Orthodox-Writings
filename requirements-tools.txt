@@ -1,0 +1,3 @@
+# Optional tooling: python tools/patristic_latin_pdf.py
+pymupdf>=1.24.0
+deep-translator>=1.11.0
