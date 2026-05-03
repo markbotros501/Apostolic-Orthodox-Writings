@@ -48,6 +48,12 @@ const db = {
                     path: "pages/fathers/severus-antioch/Critique of the Tome of Julian.html"
                 },
                 {
+                    id: "censure-tome-julian",
+                    title: "Censure on the Tome of Julian",
+                    type: "treatise",
+                    path: "pages/fathers/severus-antioch/St Severus Censure on the Tome of Julian.pdf"
+                },
+                {
                     id: "against-propositions-julian",
                     title: "Against the Propositions of Julian",
                     type: "treatise",
