@@ -42,22 +42,10 @@ const db = {
             bio: "Patriarch of Antioch and a leading theologian of the Miaphysite church, known for his extensive homilies and letters.",
             works: [
                 {
-                    id: "critique-tome-julian",
-                    title: "Critique of the Tome of Julian",
-                    type: "treatise",
-                    path: "pages/fathers/severus-antioch/Critique of the Tome of Julian.html"
-                },
-                {
                     id: "censure-tome-julian",
                     title: "Censure on the Tome of Julian",
                     type: "treatise",
                     path: "pages/fathers/severus-antioch/St Severus Censure on the Tome of Julian.pdf"
-                },
-                {
-                    id: "against-propositions-julian",
-                    title: "Against the Propositions of Julian",
-                    type: "treatise",
-                    path: "pages/fathers/severus-antioch/Against the Propositions of Julian.html"
                 }
             ]
         },
@@ -88,18 +76,6 @@ const db = {
             dates: "349 – 407 AD",
             bio: "Archbishop of Constantinople and an important Early Church Father. He is known for his eloquent preaching and public speaking, his denunciation of abuse of authority by both ecclesiastical and political leaders, and his Divine Liturgy of St. John Chrysostom.",
             works: [
-                {
-                    id: "on-the-egyptian-martyrs",
-                    title: "On the Egyptian Martyrs",
-                    type: "homily",
-                    path: "pages/fathers/john-chrysostom/On the Egyptian Martyrs.html"
-                },
-                {
-                    id: "commentary-on-job",
-                    title: "Commentary on Job",
-                    type: "commentary",
-                    path: "pages/fathers/john-chrysostom/Commentary on Job.html"
-                },
                 {
                     id: "homilies-on-anna",
                     title: "Homilies on Anna",
