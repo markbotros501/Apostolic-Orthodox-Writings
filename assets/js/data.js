@@ -22,10 +22,10 @@ const db = {
             bio: "Patriarch of Alexandria who played a central role in the Council of Ephesus and the defense of the title Theotokos for Mary.",
             works: [
                 {
-                    id: "letters-pulcheria-eudoxia",
-                    title: "Oration to Pulcheria and Eudoxia",
+                    id: "second-oration-to-the-queens",
+                    title: "Second Oration to the Queens",
                     type: "oration",
-                    path: "pages/fathers/cyril-alexandria/St Cyril to Pulcheria and Eudoxia.pdf"
+                    path: "pages/fathers/cyril-alexandria/St Cyril Second Oration to the Queens.pdf"
                 }
             ]
         },
