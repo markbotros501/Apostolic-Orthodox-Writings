@@ -71,10 +71,10 @@ const db = {
             bio: "Archbishop of Constantinople and an important Early Church Father. He is known for his eloquent preaching and public speaking, his denunciation of abuse of authority by both ecclesiastical and political leaders, and his Divine Liturgy of St. John Chrysostom.",
             works: [
                 {
-                    id: "homilies-on-anna",
-                    title: "Homilies on Anna",
+                    id: "homilies-on-david-and-saul",
+                    title: "Homilies on David and Saul",
                     type: "homily",
-                    path: "pages/fathers/john-chrysostom/Homilies on Anna.pdf"
+                    path: "pages/fathers/john-chrysostom/St John Chrysostom Homilies on David and Saul.pdf"
                 }
             ]
         }
