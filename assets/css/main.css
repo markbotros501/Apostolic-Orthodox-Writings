@@ -1727,3 +1727,12 @@ html, body {
         padding: var(--spacing-sm);
     }
 }
+
+/* Uniform typography across the site */
+html body,
+body :not(#uniform-typography),
+body :not(#uniform-typography)::before,
+body :not(#uniform-typography)::after {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: var(--font-size-base) !important;
+}

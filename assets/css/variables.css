@@ -19,16 +19,15 @@
     --color-border: #e0e0e0;
 
     /* Typography */
-    /* Using system fonts for now, but targeting serif for headings to give a "book" feel */
-    --font-serif: 'Merriweather', 'Georgia', serif;
-    --font-sans: 'Inter', 'system-ui', sans-serif;
+    --font-serif: "Times New Roman", Times, serif;
+    --font-sans: "Times New Roman", Times, serif;
 
     --font-size-base: 1rem;
-    --font-size-sm: 0.875rem;
-    --font-size-lg: 1.25rem;
-    --font-size-xl: 1.5rem;
-    --font-size-2xl: 2rem;
-    --font-size-3xl: 3rem;
+    --font-size-sm: 1rem;
+    --font-size-lg: 1rem;
+    --font-size-xl: 1rem;
+    --font-size-2xl: 1rem;
+    --font-size-3xl: 1rem;
 
     /* Spacing */
     --spacing-xs: 0.25rem;
