@@ -22,10 +22,10 @@ const db = {
             bio: "Patriarch of Alexandria who played a central role in the Council of Ephesus and the defense of the title Theotokos for Mary.",
             works: [
                 {
-                    id: "second-oration-to-the-queens",
-                    title: "Second Oration to the Queens",
-                    type: "oration",
-                    path: "pages/fathers/cyril-alexandria/St Cyril Second Oration to the Queens.pdf"
+                    id: "commentary-on-psalm-50",
+                    title: "Commentary on Psalm 50",
+                    type: "commentary",
+                    path: "pages/fathers/cyril-alexandria/St Cyril Commentary on Psalm 50.pdf"
                 }
             ]
         },
@@ -34,14 +34,7 @@ const db = {
             name: "Severus of Antioch",
             dates: "465 - 538 AD",
             bio: "Patriarch of Antioch and a leading theologian of the Miaphysite church, known for his extensive homilies and letters.",
-            works: [
-                {
-                    id: "censure-tome-julian",
-                    title: "Censure on the Tome of Julian",
-                    type: "treatise",
-                    path: "pages/fathers/severus-antioch/St Severus Censure on the Tome of Julian.pdf"
-                }
-            ]
+            works: []
         },
         {
             id: "polycarp",
