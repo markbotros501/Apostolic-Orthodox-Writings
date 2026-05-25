@@ -1736,3 +1736,7 @@ body :not(#uniform-typography)::after {
     font-family: "Times New Roman", Times, serif !important;
     font-size: var(--font-size-base) !important;
 }
+
+html body .logo:not(#uniform-typography) {
+    font-size: 2rem !important;
+}
