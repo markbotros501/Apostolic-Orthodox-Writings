@@ -74,7 +74,13 @@ const db = {
                     id: "homilies-on-david-and-saul",
                     title: "Homilies on David and Saul",
                     type: "homily",
-                    path: "pages/fathers/john-chrysostom/St John Chrysostom Homilies on David and Saul.pdf"
+                    path: "pages/fathers/john-chrysostom/Homilies on David and Saul.pdf"
+                },
+                {
+                    id: "commentary-on-psalm-150",
+                    title: "Commentary on Psalm 150",
+                    type: "commentary",
+                    path: "pages/fathers/john-chrysostom/Commentary on Psalm 150.pdf"
                 }
             ]
         }
