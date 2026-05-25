@@ -1740,3 +1740,11 @@ body :not(#uniform-typography)::after {
 html body .logo:not(#uniform-typography) {
     font-size: 2rem !important;
 }
+
+@media (max-width: 768px) {
+    html body .logo:not(#uniform-typography) {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
