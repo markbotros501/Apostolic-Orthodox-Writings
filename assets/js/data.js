@@ -34,7 +34,14 @@ const db = {
             name: "Severus of Antioch",
             dates: "465 - 538 AD",
             bio: "Patriarch of Antioch and a leading theologian of the Miaphysite church, known for his extensive homilies and letters.",
-            works: []
+            works: [
+                {
+                    id: "cathedral-homily-125",
+                    title: "Cathedral Homily 125",
+                    type: "homily",
+                    path: "pages/fathers/severus-antioch/St Severus Cathedral Homily 125.pdf"
+                }
+            ]
         },
         {
             id: "polycarp",
