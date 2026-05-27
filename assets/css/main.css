@@ -92,18 +92,6 @@ header .container {
     position: relative;
 }
 
-header .site-brand {
-    gap: var(--spacing-md);
-}
-
-.site-logo {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
 /* Coptic Cross Banner */
 .coptic-banner {
     width: 100%;
@@ -1754,13 +1742,9 @@ html body .logo:not(#uniform-typography) {
 }
 
 @media (max-width: 768px) {
-    html body .site-brand .logo:not(#uniform-typography) {
-        width: auto;
+    html body .logo:not(#uniform-typography) {
+        display: block;
+        width: 100%;
         text-align: center;
-    }
-
-    html body .site-brand .site-logo {
-        width: 48px;
-        height: 48px;
     }
 }
