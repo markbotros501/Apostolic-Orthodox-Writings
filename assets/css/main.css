@@ -1759,8 +1759,19 @@ html body .logo:not(#uniform-typography) {
     font-size: 16px !important;
 }
 
+.fathers-grid .card-works .works-list {
+    margin-top: 0 !important;
+}
+
+.fathers-grid .card-works .work-link {
+    min-height: auto !important;
+    display: block !important;
+    line-height: 1.2;
+}
+
 .fathers-grid .card-works .works-list li {
     margin-bottom: 1rem !important;
+    line-height: 1.2;
 }
 
 .fathers-grid .card-works .works-list li:last-child {
