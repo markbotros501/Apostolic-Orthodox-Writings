@@ -25,7 +25,13 @@ const db = {
                     id: "commentary-on-psalm-50",
                     title: "Commentary on Psalm 50",
                     type: "commentary",
-                    path: "pages/fathers/cyril-alexandria/St Cyril Commentary on Psalm 50.pdf"
+                    path: "pages/fathers/cyril-alexandria/Commentary on Psalm 50.pdf"
+                },
+                {
+                    id: "homily-11",
+                    title: "Homily 11",
+                    type: "homily",
+                    path: "pages/fathers/cyril-alexandria/Homily 11.pdf"
                 }
             ]
         },
