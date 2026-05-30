@@ -132,7 +132,7 @@ nav ul {
 .fathers-grid {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-lg);
+    gap: 4rem;
 }
 
 /* Cards */
@@ -216,7 +216,7 @@ nav ul {
 }
 
 .card-works .work-link {
-    font-size: 1.0625rem;
+    font-size: 16px;
 }
 
 .card-works .no-works {
@@ -752,7 +752,7 @@ footer {
     }
 
     .fathers-grid {
-        gap: 0.625rem;
+        gap: 1.25rem;
     }
 
     .card-header {
@@ -1747,4 +1747,22 @@ html body .logo:not(#uniform-typography) {
         width: 100%;
         text-align: center;
     }
+}
+
+/* Home page fathers list: uniform 16px text and consistent spacing */
+.fathers-grid .card h3,
+.fathers-grid .card .dates,
+.fathers-grid .card-with-works .card-header .dates,
+.fathers-grid .card-works .work-link,
+.fathers-grid .card-works .work-title,
+.fathers-grid .card-works .no-works {
+    font-size: 16px !important;
+}
+
+.fathers-grid .card-works .works-list li {
+    margin-bottom: 1.5rem !important;
+}
+
+.fathers-grid .card-works .works-list li:last-child {
+    margin-bottom: 0 !important;
 }
