@@ -1,5 +1,10 @@
 [
   {
+    "id": "cathedral-homily-25",
+    "title": "Cathedral Homily 25",
+    "path": "pages/fathers/severus-antioch/Cathedral Homily 25.pdf"
+  },
+  {
     "id": "cathedral-homily-41",
     "title": "Cathedral Homily 41",
     "path": "pages/fathers/severus-antioch/Cathedral Homily 41.pdf"
@@ -7,6 +12,6 @@
   {
     "id": "cathedral-homily-125",
     "title": "Cathedral Homily 125",
-    "path": "pages/fathers/severus-antioch/St Severus Cathedral Homily 125.pdf"
+    "path": "pages/fathers/severus-antioch/Cathedral Homily 125.pdf"
   }
 ]

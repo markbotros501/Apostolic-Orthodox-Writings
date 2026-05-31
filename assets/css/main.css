@@ -116,7 +116,7 @@ footer .coptic-banner {
 
 .logo {
     font-family: var(--font-serif);
-    font-size: var(--font-size-xl);
+    font-size: 16px;
     font-weight: bold;
     color: var(--color-primary);
     text-decoration: none;
@@ -1738,7 +1738,7 @@ body :not(#uniform-typography)::after {
 }
 
 html body .logo:not(#uniform-typography) {
-    font-size: 2rem !important;
+    font-size: 16px !important;
 }
 
 @media (max-width: 768px) {

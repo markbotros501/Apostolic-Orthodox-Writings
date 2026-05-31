@@ -42,6 +42,12 @@ const db = {
             bio: "Patriarch of Antioch and a leading theologian of the Miaphysite church, known for his extensive homilies and letters.",
             works: [
                 {
+                    id: "cathedral-homily-25",
+                    title: "Cathedral Homily 25",
+                    type: "homily",
+                    path: "pages/fathers/severus-antioch/Cathedral Homily 25.pdf"
+                },
+                {
                     id: "cathedral-homily-41",
                     title: "Cathedral Homily 41",
                     type: "homily",
@@ -51,7 +57,7 @@ const db = {
                     id: "cathedral-homily-125",
                     title: "Cathedral Homily 125",
                     type: "homily",
-                    path: "pages/fathers/severus-antioch/St Severus Cathedral Homily 125.pdf"
+                    path: "pages/fathers/severus-antioch/Cathedral Homily 125.pdf"
                 }
             ]
         },
