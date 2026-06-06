@@ -22,6 +22,12 @@ const db = {
             bio: "Patriarch of Alexandria who played a central role in the Council of Ephesus and the defense of the title Theotokos for Mary.",
             works: [
                 {
+                    id: "on-adoration-book-1",
+                    title: "On Adoration Book 1",
+                    type: "treatise",
+                    path: "pages/fathers/cyril-alexandria/On Adoration Book 1.pdf"
+                },
+                {
                     id: "commentary-on-psalm-50",
                     title: "Commentary on Psalm 50",
                     type: "commentary",
