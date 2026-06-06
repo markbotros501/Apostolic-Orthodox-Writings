@@ -1759,6 +1759,15 @@ html body .logo:not(#uniform-typography) {
     font-size: 16px !important;
 }
 
+.fathers-grid .card-header {
+    padding-bottom: 0;
+}
+
+.fathers-grid .card-works {
+    margin-top: 1rem !important;
+    padding-top: 0 !important;
+}
+
 .fathers-grid .card-works .works-list {
     margin-top: 0 !important;
 }
