@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Site Unavailable - Apostolic Orthodox Writings</title>
+    <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .disabled-page {
+            max-width: 40rem;
+            margin: 4rem auto;
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+
+        .disabled-page h1 {
+            margin-bottom: 1rem;
+        }
+
+        .disabled-page p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <span class="logo">Apostolic Orthodox Writings</span>
+        </div>
+    </header>
+
+    <main class="container disabled-page">
+        <h1>Site temporarily unavailable</h1>
+        <p id="disabled-message">Apostolic Orthodox Writings is temporarily unavailable.</p>
+    </main>
+
+    <script>
+        fetch('site-config.json?t=' + Date.now())
+            .then(function (response) { return response.ok ? response.json() : null; })
+            .then(function (config) {
+                if (config && config.message) {
+                    document.getElementById('disabled-message').textContent = config.message;
+                    document.title = 'Site Unavailable - Apostolic Orthodox Writings';
+                }
+            })
+            .catch(function () { });
+    </script>
+</body>
+
+</html>

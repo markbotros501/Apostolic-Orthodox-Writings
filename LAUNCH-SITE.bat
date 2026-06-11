@@ -8,11 +8,21 @@ echo ========================================
 echo   Launching Site with Web Server
 echo ========================================
 echo.
+
+cd /d "%~dp0"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "$config = Get-Content 'site-config.json' -Raw | ConvertFrom-Json; if ($config.enabled -eq $false) { Write-Host 'Site is disabled in site-config.json.' -ForegroundColor Yellow; exit 2 }"
+if errorlevel 2 (
+    echo.
+    echo The site is currently disabled.
+    echo To re-enable it, set "enabled": true in site-config.json
+    echo and restore vercel.json rewrites.
+    echo.
+    pause
+    exit /b 1
+)
+
 echo Starting server on port 8080...
 echo.
-
-REM Try port 8080 first (may not need admin)
-cd /d "%~dp0"
 start "Web Server - Port 8080" cmd /c "cd /d %~dp0 && powershell.exe -ExecutionPolicy Bypass -File server-alt-port.ps1"
 
 REM Wait for server to start

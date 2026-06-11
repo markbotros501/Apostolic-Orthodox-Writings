@@ -19,6 +19,32 @@ if ([string]::IsNullOrEmpty($rootPath)) {
 }
 Write-Host "Serving from: $rootPath" -ForegroundColor Cyan
 
+$configPath = Join-Path $rootPath "site-config.json"
+$siteEnabled = $true
+if (Test-Path $configPath) {
+    try {
+        $siteConfig = Get-Content $configPath -Raw | ConvertFrom-Json
+        if ($siteConfig.enabled -eq $false) {
+            $siteEnabled = $false
+            Write-Host "Site is DISABLED in site-config.json" -ForegroundColor Yellow
+        }
+    } catch {
+        Write-Host "Could not read site-config.json; site will remain enabled." -ForegroundColor Yellow
+    }
+}
+
+function Test-AllowedWhenDisabled([string]$Path) {
+    $allowed = @(
+        "/disabled.html",
+        "/site-config.json",
+        "/favicon.ico",
+        "/apple-touch-icon.png",
+        "/site.webmanifest"
+    )
+    if ($allowed -contains $Path) { return $true }
+    return ($Path.StartsWith("/assets/css/") -or $Path.StartsWith("/assets/images/"))
+}
+
 while ($listener.IsListening) {
     try {
         $context = $listener.GetContext()
@@ -31,6 +57,10 @@ while ($listener.IsListening) {
         $localPath = $request.Url.LocalPath
         if ($localPath -eq "/") {
             $localPath = "/index.html"
+        }
+
+        if (-not $siteEnabled -and -not (Test-AllowedWhenDisabled $localPath)) {
+            $localPath = "/disabled.html"
         }
         
         # Clean up the path and convert to Windows format

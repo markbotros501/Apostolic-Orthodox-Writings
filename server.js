@@ -6,6 +6,30 @@ const url = require('url');
 const PORT = 8000;
 const ROOT_DIR = __dirname;
 
+function isSiteEnabled() {
+    try {
+        const configPath = path.join(ROOT_DIR, 'site-config.json');
+        const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+        return config.enabled !== false;
+    } catch (err) {
+        return true;
+    }
+}
+
+function isAllowedWhenDisabled(filePath) {
+    const allowed = [
+        '/disabled.html',
+        '/site-config.json',
+        '/favicon.ico',
+        '/apple-touch-icon.png',
+        '/site.webmanifest'
+    ];
+    if (allowed.includes(filePath)) {
+        return true;
+    }
+    return filePath.startsWith('/assets/css/') || filePath.startsWith('/assets/images/');
+}
+
 const MIME_TYPES = {
     '.html': 'text/html; charset=utf-8',
     '.css': 'text/css',
@@ -23,6 +47,10 @@ const server = http.createServer((req, res) => {
     
     if (filePath === '/') {
         filePath = '/index.html';
+    }
+
+    if (!isSiteEnabled() && !isAllowedWhenDisabled(filePath)) {
+        filePath = '/disabled.html';
     }
     
     const fullPath = path.join(ROOT_DIR, filePath);
